@@ -17,7 +17,7 @@ import java.util.Optional;
 
 @Component
 public class DBFeeder {
-    private ProductRepository productRepository;
+    private final ProductRepository productRepository;
 
     @Autowired
     public DBFeeder(ProductRepository productRepository) {
