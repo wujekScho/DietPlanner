@@ -1,0 +1,121 @@
+﻿Awokado;Owoc;160,00;2,00;15,30;7,40;sztuka;141,00;0,50
+Banan;Owoc;95,00;1,00;0,30;23,50;sztuka;115,00;0,50
+Bataty;Warzywo ;86,00;1,90;0,10;21,00;;;
+Bazylia;Przyprawa;22,00;3,20;0,60;2,70;garść;10,00;1,00
+Brokuły;Warzywo ;27,00;3,00;0,40;5,20;;;
+Bulion warzywny;Inne;8,00;0,00;0,00;2,00;;;
+Burak;Warzywo ;38,00;1,80;0,10;9,50;sztuka;292,00;0,50
+Cebula;Warzywo ;30,00;1,30;0,30;7,00;;;
+Chia nasiona;Pestki/Nasiona/Sypkie;490,00;16,00;31,00;44,00;łyżka;10,00;1,00
+Chleb żytni razowy;Pieczywo;214,70;5,90;1,70;58,80;kromka;31,00;1,00
+Cieciorka gotowana na parze Bonduelle;Pestki/Nasiona/Sypkie;127,00;6,40;3,20;18,40;łyżka;14,00;1,00
+Cukinia;Warzywo ;15,00;1,20;0,10;3,20;sztuka;225,00;0,50
+Curry;Przyprawa;0,00;0,00;0,00;0,00;;;
+Cynamon;Przyprawa;0,00;0,00;0,00;0,00;;;
+Czerwone owoce (dowolne);Owoc;28,00;0,70;0,40;7,20;;;
+Czosnek;Warzywo ;146,70;6,70;0,00;33,30;ząbek;6,70;1,00
+Dorsz, świeży, filety bez skóry;Ryba/Mięso;69,60;16,50;0,30;0,00;;;
+Dowolna słodkość do 200 kcal.;Inne;340,00;12,70;18,20;32,20;;;
+Dynia, pestki;Pestki/Nasiona/Sypkie;556,00;25,00;46,00;18,00;łyżka;10,00;1,00
+Dżem jagodowy, niskosłodzony;Inne;153,30;0,00;0,00;38,00;;;
+Fasola szparagowa;Warzywo ;27,00;2,40;0,20;7,60;porcja;50,00;1,00
+Granola;Produkty śniadaniowe;412,00;9,20;6,60;69,00;łyżka;10,00;1,00
+Grejpfrut;Owoc;36,00;0,60;0,20;9,80;sztuka;300,00;0,5
+Groszek zielony;Warzywo ;75,00;6,70;0,40;17,00;porcja;100,00;1,00
+Gruszka;Owoc;54,00;0,60;0,20;14,40;sztuka;156,00;0,50
+Hummus;Inne;346,00;8,50;29,00;15,50;łyżeczka;10,00;1,00
+Imbir;Przyprawa;80,00;3,30;0,00;16,70;;;
+Jabłko;Owoc;46,00;0,40;0,40;12,10;sztuka;188,00;0,50
+Jaja kurze całe;Nabiał;139,00;19,20;9,70;0,60;sztuka;150,00;1,00
+Jogurt naturalny, 2% tłuszczu;Nabiał;60,00;4,30;2,00;6,20;kubek;250,00;1,00
+Kasza gryczana;Pestki/Nasiona/Sypkie;336,00;12,60;3,10;69,30;;;
+Kasza jęczmienna, perłowa;Pestki/Nasiona/Sypkie;327,00;6,80;2,20;75,00;;;
+Kiełki;Zielenina;119,00;9,00;1,00;22,00;porcja;10,00;1,00
+Kiwi;Owoc;56,00;0,90;0,50;14,00;sztuka;81,00;0,50
+Kolendra;Przyprawa;0,00;0,00;0,00;0,00;;;
+Koper ogrodowy;Zielenina;26,30;2,50;0,60;6,30;łyżka;16,00;1,00
+Koperek;Zielenina;0,00;0,00;0,00;0,00;;;
+Ksylitol;Przyprawa;240,00;0,00;0,00;0,00;;;
+Liść laurowy;Przyprawa;0,00;0,00;0,00;0,00;;;
+Łosoś, świeży;Ryba/Mięso;201,00;19,90;13,60;0,00;;;
+Łosoś, wędzony;Ryba/Mięso;162,00;21,60;8,40;0,00;;;
+Makaron penne pełnoziarnisty;Ryż/Makaron/Kasza;100,00;4,40;0,40;19,70;;;
+Marchew;Warzywo ;27,00;1,00;0,20;8,70;sztuka;105,00;0,50
+Masło klarowane;Inne;735,30;0,70;82,70;0,70;;;
+Mąka kukurydziana;Do pieczenia;337,00;6,00;3,00;78,00;łyżka;6,00;0,50
+Mąka owsiana;Do pieczenia;366,70;11,70;6,70;70,00;łyżka;6,00;0,50
+Mieszanka warzywna mrożona;Mrożonka;38,00;1,90;0,30;8,80;;;
+Mięso z piersi indyka, bez skóry;Ryba/Mięso;84,00;19,20;0,70;0,00;;;
+Mięso z piersi kurczaka;Ryba/Mięso;99,00;21,50;1,30;0,00;;;
+Mięso z ud kurczaka, bez skóry;Ryba/Mięso;125,00;17,80;6,00;0,00;;;
+Migdały;Pestki/Nasiona/Sypkie;572,00;20,00;52,00;20,50;łyżka;10,00;0,50
+Mintaj, świeży;Ryba/Mięso;73,00;16,60;0,60;0,00;;;
+Mleko kokosowe;Nabiał;202,00;1,60;20,80;5,60;;;
+Mleko migdałowe;Nabiał;30,00;0,50;2,00;3,00;;;
+Mleko roślinne dowolne;Nabiał;51,00;3,40;2,00;4,90;;;
+Naleśniki suchy;Inne;100,00;5,90;3,60;21,10;sztuka;80,00;1,00
+Ogórek;Warzywo ;13,00;0,70;0,10;2,90;sztuka;111,00;1,00
+Ogórek kiszony;Warzywo ;11,00;1,00;0,20;1,80;sztuka;60,00;1,00
+Olej rzepakowy uniwersalny;Inne;883,80;0,00;100,00;0,00;łyżka;6,00;1,00
+Oliwa z oliwek;Inne;881,70;0,00;100,00;0,00;łyżka;6,00;1,00
+Oliwki marynowane, konserwowe;Warzywo ;125,00;1,50;12,50;4,00;sztuka;2,00;1,00
+Orzechy dowolne;Pestki/Nasiona/Sypkie;640,00;14,50;63,00;15,00;łyżka;20,00;1,00
+Orzechy włoskie;Pestki/Nasiona/Sypkie;645,00;16,00;60,30;18,00;;;
+Otręby - dowolne;Pestki/Nasiona/Sypkie;185,00;16,70;5,00;61,70;łyżka;6,00;1,00
+Papryka czerwona;Warzywo ;28,00;1,30;0,50;6,60;sztuka;150,00;1,00
+Papryka żółta;Warzywo ;28,00;1,30;0,50;6,60;sztuka;150,00;1,00
+Pergamin do smażenia;Inne;0,00;0,00;0,00;0,00;;;
+Pesto;Inne;340,00;3,50;34,50;6,50;łyżeczka;10,00;1,00
+Pieczarka uprawna, świeża;Warzywo ;16,90;2,60;0,40;2,60;sztuka;18;1,00
+Pieprz cytrynowy;Przyprawa;0,00;0,00;0,00;0,00;;;
+Pietruszka - korzeń;Warzywo ;38,10;2,60;0,40;10,40;sztuka;27,00;1,00
+Pietruszka - liście;Warzywo ;40,00;5,00;0,00;10,00;łyżka;6,00;1,00
+Płatki owsiane;Pestki/Nasiona/Sypkie;366,00;12,00;7,30;69,30;;;
+Polędwica tzw. łososiowa;Ryba/Mięso;84,00;17,10;1,60;0,00;plasterek;15,00;1,00
+Pomarańcza;Owoc;44,00;0,90;0,20;11,30;sztuka;250,00;1,00
+Pomelo;Owoc;38,00;0,80;0,00;9,60;sztuka;300,00;1,00
+Pomidor;Warzywo ;15,00;0,90;0,20;3,60;sztuka;192,00;1,00
+Pomidorki koktajlowe;Warzywo ;15,00;0,90;0,10;3,60;;;
+Pomidory w puszce krojone;Inne;25,00;1,20;0,10;4,50;puszka;1,00;1,00
+Por;Warzywo ;24,00;2,30;0,30;5,70;;;
+Rękaw do pieczenia;Inne;0,00;0,00;0,00;0,00;;;
+Ryż basmati;Ryż/Makaron/Kasza;344,00;6,70;0,70;78,80;;;
+Rzodkiewka;Warzywo ;14,00;1,10;0,20;4,40;sztuka;15,00;1,00
+Sałata;Warzywo ;14,00;1,30;0,00;2,70;liść;5,00;1,00
+Sałata - mix sałat;Warzywo ;14,00;1,30;0,30;2,90;opakowanie;150,00;0,50
+Sałaty - dowolne;Warzywo ;14,00;1,30;0,30;2,90;garść;75,00;1,00
+Seler korzeniowy;Warzywo ;21,00;1,60;0,30;7,70;;;
+Seler naciowy;Warzywo ;13,00;1,00;0,30;3,70;łodyga;30,00;1,00
+Ser mozzarella;Nabiał;248,00;11,50;12,20;23,70;kulka;125,00;1,00
+Ser twarogowy chudy;Nabiał;99,00;19,80;0,50;3,50;;;
+Ser typu "Feta";Nabiał;215,00;17,00;16,00;1,00;;;
+Ser żółty;Nabiał;403,00;24,80;33,20;1,30;plasterek;15;1,00
+Serek typu ARLA;Nabiał;367,10;10,00;35,00;4,20;łyżeczka;12,00;1,00
+Sezam, nasiona;Pestki/Nasiona/Sypkie;632,30;23,10;60,00;10,00;;;
+Słonecznik, nasiona;Pestki/Nasiona/Sypkie;561,00;24,30;43,70;24,70;łyżka;15,00;1,00
+Sok warzywno - owocowy (50/50);Inne;42,60;0,40;0,10;11,30;szklanka;250,00;1,00
+Sok warzywny;Inne;43,00;0,40;0,10;11,30;szklanka;250,00;1,00
+Sos winegret;Inne;500,00;0,00;55,00;1,50;łyżka;10,00;1,00
+Suszone pomidory;Warzywo ;213,00;5,00;14,00;23,00;;;
+Szczypiorek;Warzywo ;28,80;4,40;0,60;3,80;;;
+Szpinak;Warzywo ;16,00;2,70;0,70;3,30;;;
+Szynka z indyka;Ryba/Mięso;83,80;17,20;1,70;0,20;plasterek;15,00;1,00
+Śmietana jogurtowa 10 %;Nabiał;116,00;3,00;10,00;3,60;;;
+Świerza kolendra;Przyprawa;0,00;0,00;0,00;0,00;;;
+Wywar z warzyw;Inne;8,00;0,00;0,00;2,00;;;
+Ziele angielskie;Przyprawa;0,00;0,00;0,00;0,00;;;
+Ziemniak;Warzywo ;77,10;1,90;0,00;18,40;sztuka;31,00;1,00
+Zupa jarzynowa;Inne;28,00;1,40;1,10;4,30;;;
+Fasola czerwona z puszki;Inne;347,00;21,00;1,20;63,00;;;
+Kalarepa;Warzywo ;29,00;2,20;0,30;6,50;sztuka;102,00;0,50
+Kapusta biała;Warzywo ;25,00;1,20;0,10;4,50;;;
+Kasza jaglana;Ryż/Makaron/Kasza;378,00;11,00;4,20;73,00;;;
+Mąka ryżowa;Ryż/Makaron/Kasza;365,00;6,00;1,40;80,00;;;
+Melon;Owoc;33,00;0,80;0,20;8,00;;;
+Ogórek małosolny;Warzywo ;11,00;0,30;0,20;2,30;;;
+Otręby pszenne;Pestki/Nasiona/Sypkie;185,00;16,70;5,00;61,70;;;
+Płatki gryczane;Pestki/Nasiona/Sypkie;356,00;12,20;3,00;70,00;;;
+Przecier pomidorowy;Inne;82,00;4,30;0,50;19,00;;;
+Ryż brązowy;Ryż/Makaron/Kasza;110,00;2,60;0,90;23,00;;;
+Serek typu Philadelphia;Nabiał;367,00;10,00;35,20;4,00;;;
+Truskawki;Owoc;32,00;0,70;0,30;8,00;;;
