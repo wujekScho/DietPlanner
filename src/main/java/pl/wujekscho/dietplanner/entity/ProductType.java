@@ -14,13 +14,13 @@ public enum ProductType {
     INNE("Inne"),
     MROŻONKI("Mrożonka"),
     DO_PIECZENIA("Do pieczenia");
-    private final String text;
+    private final String type;
 
-    ProductType(final String text) {
-        this.text = text;
+    ProductType(final String type) {
+        this.type = type;
     }
 
-    public String getText() {
-        return text;
+    public String getType() {
+        return type;
     }
 }

@@ -34,7 +34,7 @@ public class DBFeeder {
                         Product product = new Product();
                         product.setName(s[0]);
                         Optional<ProductType> productType = Arrays.stream(ProductType.values())
-                                .filter(p -> p.getText().equalsIgnoreCase(s[1].trim()))
+                                .filter(p -> p.getType().equalsIgnoreCase(s[1].trim()))
                                 .findFirst();
                         product.setProductType((productType.isPresent()) ? productType.get() : ProductType.INNE);
                         product.setCalories(Double.valueOf(s[2].replace(",", ".")).intValue());

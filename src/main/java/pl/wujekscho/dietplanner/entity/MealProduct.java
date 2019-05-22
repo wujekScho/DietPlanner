@@ -15,7 +15,7 @@ public class MealProduct {
     Long id;
     @Column(nullable = false)
     Integer weight;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     Product product;
 
     public MealProduct(Integer weight, Product product) {

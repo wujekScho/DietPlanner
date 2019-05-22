@@ -20,11 +20,11 @@ public class Product {
     ProductType productType;
     @Column(nullable = false)
     Integer calories;
-    @Column(nullable = false)
+    @Column(nullable = false, scale = 1)
     Double protein;
-    @Column(nullable = false)
+    @Column(nullable = false, scale = 1)
     Double fat;
-    @Column(nullable = false)
+    @Column(nullable = false, scale = 1)
     Double carbohydrates;
     String homeMeasureType;
     Double homeMeasureWeightRadio;
