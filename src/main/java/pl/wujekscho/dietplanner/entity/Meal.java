@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +12,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @Table(name = "meals")
-public class Meal {
+public class Meal implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
@@ -40,6 +41,8 @@ public class Meal {
         this.mealType = mealType;
     }
 
+    @PrePersist
+    @PreUpdate
     public void calculateProperties() {
         this.mealWeight = 0;
         this.mealCalories = 0;
