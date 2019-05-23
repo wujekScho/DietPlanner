@@ -12,7 +12,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @Table(name = "day_meals")
-public class DayMeals implements Serializable {
+public class DayMeals implements Serializable, EntityModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
