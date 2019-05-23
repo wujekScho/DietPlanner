@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/products")
-public class ProductController {
+public class ProductController implements EntityController<Product> {
     private final ProductRepository productRepository;
 
     @Autowired
@@ -20,11 +20,13 @@ public class ProductController {
         this.productRepository = productRepository;
     }
 
+    @Override
     @GetMapping(path = "")
     public List<Product> getAll() {
         return productRepository.findAll();
     }
 
+    @Override
     @GetMapping(path = "/{id}")
     public Product getById(@PathVariable Long id) {
         return productRepository.getOne(id);
