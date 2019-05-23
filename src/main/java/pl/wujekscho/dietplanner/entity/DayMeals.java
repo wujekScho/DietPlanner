@@ -1,7 +1,9 @@
 package pl.wujekscho.dietplanner.entity;
 
+import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -11,6 +13,7 @@ import java.util.List;
 @Entity
 @Data
 @NoArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
 @Table(name = "day_meals")
 public class DayMeals implements Serializable, EntityModel {
     @Id
@@ -26,14 +29,14 @@ public class DayMeals implements Serializable, EntityModel {
     Meal tea;
     @ManyToOne(fetch = FetchType.EAGER)
     Meal supper;
-    Integer dayWeight = 0;
-    Integer dayCalories = 0;
+    Integer weight = 0;
+    Integer calories = 0;
     @Column(scale = 1)
-    Double dayProtein = 0.0;
+    Double protein = 0.0;
     @Column(scale = 1)
-    Double dayFat = 0.0;
+    Double fat = 0.0;
     @Column(scale = 1)
-    Double dayCarbohydrates = 0.0;
+    Double carbohydrates = 0.0;
 
     public DayMeals(Meal breakfast, Meal brunch, Meal dinner, Meal tea, Meal supper) {
         this.breakfast = breakfast;
@@ -50,18 +53,18 @@ public class DayMeals implements Serializable, EntityModel {
     @PrePersist
     @PreUpdate
     public void calculateProperties() {
-        this.dayWeight = 0;
-        this.dayCalories = 0;
-        this.dayProtein = 0.0;
-        this.dayFat = 0.0;
-        this.dayCarbohydrates = 0.0;
+        this.weight = 0;
+        this.calories = 0;
+        this.protein = 0.0;
+        this.fat = 0.0;
+        this.carbohydrates = 0.0;
         for (Meal meal : getDayMeals()) {
             if (meal != null) {
-                this.dayWeight += meal.getMealWeight();
-                this.dayCalories += meal.getMealCalories();
-                this.dayProtein += meal.getMealProtein();
-                this.dayFat += meal.getMealFat();
-                this.dayCarbohydrates += meal.getMealCarbohydrates();
+                this.weight += meal.getWeight();
+                this.calories += meal.getCalories();
+                this.protein += meal.getProtein();
+                this.fat += meal.getFat();
+                this.carbohydrates += meal.getCarbohydrates();
             }
         }
     }

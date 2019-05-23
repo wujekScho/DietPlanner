@@ -43,7 +43,7 @@ public class DBFeeder {
                         product.setCarbohydrates(Double.valueOf(s[5].replace(",", ".")));
                         if (s.length == 9) {
                             product.setHomeMeasureType(s[6]);
-                            product.setHomeMeasureWeightRadio(Double.valueOf(s[7].replace(",", ".")));
+                            product.setHomeMeasureWeightRatio(Double.valueOf(s[7].replace(",", ".")));
                             product.setHomeMeasureStep(Double.valueOf(s[8].replace(",", ".")));
                         }
                         productRepository.save(product);

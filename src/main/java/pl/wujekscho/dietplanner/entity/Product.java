@@ -1,7 +1,9 @@
 package pl.wujekscho.dietplanner.entity;
 
+import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -9,6 +11,7 @@ import java.io.Serializable;
 @Entity
 @Data
 @NoArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
 @Table(name = "products")
 public class Product implements Serializable, EntityModel {
     @Id
@@ -28,7 +31,7 @@ public class Product implements Serializable, EntityModel {
     @Column(nullable = false, scale = 1)
     Double carbohydrates;
     String homeMeasureType;
-    Double homeMeasureWeightRadio;
+    Double homeMeasureWeightRatio;
     Double homeMeasureStep;
 
     public Product(String name, ProductType productType, Integer calories, Double protein, Double fat, Double carbohydrates) {
@@ -40,7 +43,7 @@ public class Product implements Serializable, EntityModel {
         this.carbohydrates = carbohydrates;
     }
 
-    public Product(String name, ProductType productType, Integer calories, Double protein, Double fat, Double carbohydrates, String homeMeasureType, Double homeMeasureWeightRadio, Double homeMeasureStep) {
+    public Product(String name, ProductType productType, Integer calories, Double protein, Double fat, Double carbohydrates, String homeMeasureType, Double homeMeasureWeightRatio, Double homeMeasureStep) {
         this.name = name;
         this.productType = productType;
         this.calories = calories;
@@ -48,7 +51,7 @@ public class Product implements Serializable, EntityModel {
         this.fat = fat;
         this.carbohydrates = carbohydrates;
         this.homeMeasureType = homeMeasureType;
-        this.homeMeasureWeightRadio = homeMeasureWeightRadio;
+        this.homeMeasureWeightRatio = homeMeasureWeightRatio;
         this.homeMeasureStep = homeMeasureStep;
     }
 }
