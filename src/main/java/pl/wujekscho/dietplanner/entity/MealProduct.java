@@ -38,15 +38,16 @@ public class MealProduct implements Serializable, EntityModel {
     @PrePersist
     @PreUpdate
     public void calculateProperties() {
-
-        if (this.product.getHomeMeasureType() != null) {
-            Double step = this.product.getHomeMeasureWeightRatio() * this.product.getHomeMeasureStep();
-            this.weight = (int) (Math.round(this.weight / (step)) * step);
+        if (weight != null) {
+            if (this.product.getHomeMeasureType() != null) {
+                Double step = this.product.getHomeMeasureWeightRatio() * this.product.getHomeMeasureStep();
+                this.weight = (int) (Math.round(this.weight / (step)) * step);
+            }
+            Double ratio = (double) this.weight / 100;
+            this.calories = (int) (ratio * this.product.getCalories());
+            this.protein = ratio * this.product.getProtein();
+            this.fat = ratio * this.product.getFat();
+            this.carbohydrates = ratio * this.product.getCarbohydrates();
         }
-        Double ratio = (double) this.weight / 100;
-        this.calories = (int) (ratio * this.product.getCalories());
-        this.protein = ratio * this.product.getProtein();
-        this.fat = ratio * this.product.getFat();
-        this.carbohydrates = ratio * this.product.getCarbohydrates();
     }
 }

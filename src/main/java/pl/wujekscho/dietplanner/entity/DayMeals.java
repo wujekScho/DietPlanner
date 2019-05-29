@@ -50,6 +50,26 @@ public class DayMeals implements Serializable, EntityModel {
         return Arrays.asList(this.breakfast, this.brunch, this.dinner, this.tea, this.supper);
     }
 
+    public void setMeal(Meal meal) {
+        switch (meal.getMealType().getType()) {
+            case "Śniadanie":
+                this.setBreakfast(meal);
+                break;
+            case "Drugie śniadanie":
+                this.setBrunch(meal);
+                break;
+            case "Obiad":
+                this.setDinner(meal);
+                break;
+            case "Podwieczorek":
+                this.setTea(meal);
+                break;
+            case "Kolacja":
+                this.setSupper(meal);
+                break;
+        }
+    }
+
     @PrePersist
     @PreUpdate
     public void calculateProperties() {

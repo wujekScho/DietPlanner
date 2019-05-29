@@ -4,12 +4,12 @@
 Śniadanie;;;Masło klarowane;10
 Śniadanie;;;Chleb żytni razowy;31
 Śniadanie;;;Pesto;10
-Śniadanie;;;Masło klarowane;
+Śniadanie;;;Masło klarowane;10
 Drugie śniadanie;Sałatka z fasolką, makaronem i serem feta;;Fasola szparagowa;100
 Drugie śniadanie;;;Słonecznik, nasiona;20
 Drugie śniadanie;;;Makaron penne pełnoziarnisty;40
 Drugie śniadanie;;;Oliwa z oliwek;2
-Drugie śniadanie;;;"Ser typu ""Feta""";42
+Drugie śniadanie;;;"Ser typu Feta";42
 Obiad;Kasza gryczana z warzywami i pestkami dyni;Na oliwie podsmażamy pokrojoną w kostkę paprykę. Brokuły gotujemy al dente. Ugotowaną kaszę gryczaną mieszamy z warzywami i pestkami dyni. Posypujemy dowolną zieleniną. Natką pietruszki, kolendrą, bazylią.;Kasza gryczana;70
 Obiad;;;Brokuły;104
 Obiad;;;Olej rzepakowy uniwersalny;16

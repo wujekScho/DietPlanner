@@ -24,6 +24,8 @@ public class Meal implements Serializable, EntityModel {
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     MealType mealType;
+    @Lob
+    @Column(length = 1000)
     String recipe;
     @ManyToMany
     List<MealProduct> mealProducts = new ArrayList<>();
