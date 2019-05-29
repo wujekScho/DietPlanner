@@ -20,23 +20,24 @@ public class DietplannerApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext ctx = SpringApplication.run(DietplannerApplication.class, args);
         ProductRepository productRepository = ctx.getBean(ProductRepository.class);
+        MealProductRepository mealProductRepository = ctx.getBean(MealProductRepository.class);
+        MealRepository mealRepository = ctx.getBean(MealRepository.class);
+        DayMealsRepository dayMealsRepository = ctx.getBean(DayMealsRepository.class);
         DBFeeder dbFeeder = ctx.getBean(DBFeeder.class);
         if (productRepository.count() == 0) {
             dbFeeder.importProdutcts();
         }
-        MealProductRepository mealProductRepository = ctx.getBean(MealProductRepository.class);
-        MealRepository mealRepository = ctx.getBean(MealRepository.class);
-        DayMealsRepository dayMealsRepository = ctx.getBean(DayMealsRepository.class);
-        MealProduct awokado = new MealProduct(141, productRepository.getOne(1L));
-        MealProduct banan = new MealProduct(115, productRepository.getOne(2L));
-        mealProductRepository.save(awokado);
-        mealProductRepository.save(banan);
-        Meal salatkaAwokado = new Meal("Sałatka owocowa", "Wymieszaj banana z pokrojonym awokado.", MealType.DRUGIE_ŚNIADANIE);
-        List<MealProduct> mealProducts = salatkaAwokado.getMealProducts();
-        mealProducts.add(awokado);
-        mealProducts.add(banan);
-        mealRepository.save(salatkaAwokado);
-        DayMeals day1 = new DayMeals(salatkaAwokado, salatkaAwokado, salatkaAwokado, salatkaAwokado, salatkaAwokado);
-        dayMealsRepository.save(day1);
+//        MealProduct awokado = new MealProduct(141, productRepository.getOne(1L));
+//        MealProduct banan = new MealProduct(115, productRepository.getOne(2L));
+//        mealProductRepository.save(awokado);
+//        mealProductRepository.save(banan);
+//        Meal salatkaAwokado = new Meal("Sałatka owocowa", "Wymieszaj banana z pokrojonym awokado.", MealType.DRUGIE_ŚNIADANIE);
+//        List<MealProduct> mealProducts = salatkaAwokado.getMealProducts();
+//        mealProducts.add(awokado);
+//        mealProducts.add(banan);
+//        mealRepository.save(salatkaAwokado);
+//        DayMeals day1 = new DayMeals(salatkaAwokado, salatkaAwokado, salatkaAwokado, salatkaAwokado, salatkaAwokado);
+//        dayMealsRepository.save(day1);
+        System.out.println(productRepository.findFirstByName("Awokado"));
     }
 }

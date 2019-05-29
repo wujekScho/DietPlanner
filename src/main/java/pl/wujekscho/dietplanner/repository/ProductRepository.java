@@ -6,4 +6,5 @@ import pl.wujekscho.dietplanner.entity.Product;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
+    Product findFirstByName(String name);
 }
