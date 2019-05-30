@@ -1,4 +1,4 @@
-﻿Śniadanie;Jajko sadzone w papryce;Paprykę kroimy w krążki. Na klarowanym maśle podduszamy paprykę z jednej strony. Przewracamy krążek nadrugą stronę, wbijamy jajka, skręcamy ogień do minimum, przykrywamy pokrywką. Żółtko jaja ma być płynne, a białko ścięte. Gotowe jajka posypujemy szczypiorkiem.;Papryka czerwona;75
+Śniadanie;Jajko sadzone w papryce;Paprykę kroimy w krążki. Na klarowanym maśle podduszamy paprykę z jednej strony. Przewracamy krążek nadrugą stronę, wbijamy jajka, skręcamy ogień do minimum, przykrywamy pokrywką. Żółtko jaja ma być płynne, a białko ścięte. Gotowe jajka posypujemy szczypiorkiem.;Papryka czerwona;75
 Śniadanie;;;Jaja kurze całe;150
 Śniadanie;;;Szczypiorek;16
 Śniadanie;;;Masło klarowane;10
@@ -9,7 +9,7 @@ Drugie śniadanie;Sałatka z fasolką, makaronem i serem feta;;Fasola szparagowa
 Drugie śniadanie;;;Słonecznik, nasiona;20
 Drugie śniadanie;;;Makaron penne pełnoziarnisty;40
 Drugie śniadanie;;;Oliwa z oliwek;2
-Drugie śniadanie;;;"Ser typu Feta";42
+Drugie śniadanie;;;Ser typu "Feta";42
 Obiad;Kasza gryczana z warzywami i pestkami dyni;Na oliwie podsmażamy pokrojoną w kostkę paprykę. Brokuły gotujemy al dente. Ugotowaną kaszę gryczaną mieszamy z warzywami i pestkami dyni. Posypujemy dowolną zieleniną. Natką pietruszki, kolendrą, bazylią.;Kasza gryczana;70
 Obiad;;;Brokuły;104
 Obiad;;;Olej rzepakowy uniwersalny;16
@@ -24,7 +24,6 @@ Kolacja;;;Sałaty - dowolne;75
 Kolacja;;;Pomidorki koktajlowe;100
 Kolacja;;;Dynia, pestki;10
 Kolacja;;;Sos winegret;10
-Kolacja;;;Pieprz cytrynowy;
 Śniadanie;Koktaj z bananem i mrożonymi owocami;Wszystkie składniki (oprócz owoców) zalewamy ciepłym mlekiem. Odstawiamy na 10 minut. Blendujemy z owocami.;Otręby - dowolne;6
 Śniadanie;;;Mleko roślinne dowolne;300
 Śniadanie;;;Czerwone owoce (dowolne);70
@@ -40,7 +39,7 @@ Obiad;;;Masło klarowane;10
 Obiad;;;Cebula;70
 Obiad;;;Makaron penne pełnoziarnisty;70
 Obiad;;;Migdały;20
-Obiad;;;Ksylitol;
+Obiad;;;Ksylitol;10
 Podwieczorek;Kanapka z szynką i serkiem arla;;Chleb żytni razowy;62
 Podwieczorek;;;Sałata;5
 Podwieczorek;;;Serek typu ARLA;24
@@ -79,7 +78,6 @@ Kolacja;;;Masło klarowane;10
 Śniadanie;;;Płatki owsiane;40
 Śniadanie;;;Chia nasiona;10
 Śniadanie;;;Orzechy dowolne;16
-Śniadanie;;;Cynamon;
 Drugie śniadanie;Sałatka z kaszą, cukinią i oliwkami;;Oliwa z oliwek;8
 Drugie śniadanie;;;Cukinia;50
 Drugie śniadanie;;;Oliwki marynowane, konserwowe;25
@@ -91,8 +89,8 @@ Obiad;;;Ryż basmati;70
 Obiad;;;Olej rzepakowy uniwersalny;8
 Obiad;;;Marchew;105
 Obiad;;;Pietruszka - liście;4
-Obiad;;;Curry;
-Obiad;;;Imbir;
+Obiad;;;Curry;5
+Obiad;;;Imbir;5
 Podwieczorek;Jabłko z migdałami;;Jabłko;263
 Podwieczorek;;;Migdały;40
 Kolacja;Sałatka z ogórekiem, sałatą i rzodkiewką;;Sałaty - dowolne;75
@@ -126,8 +124,8 @@ Kolacja;;;Pietruszka - korzeń;27
 Kolacja;;;Ziemniak;31
 Kolacja;;;Oliwa z oliwek;8
 Kolacja;;;Brokuły;156
-Kolacja;;;Liść laurowy;
-Kolacja;;;Ziele angielskie;
+Kolacja;;;Liść laurowy;5
+Kolacja;;;Ziele angielskie;5
 Śniadanie;Koktajl na ciepło z bananem i czerwonymi owocami;Wszystkie składniki zalewamy ciepłym mlekiem. Odstawiamy na 5 minut. Blendujemy na koktajl.;Mleko roślinne dowolne;300
 Śniadanie;;;Banan;115
 Śniadanie;;;Płatki owsiane;30
@@ -149,15 +147,15 @@ Podwieczorek;;;Sałata;5
 Podwieczorek;;;Ogórek;111
 Kolacja;Sałatka z serem feta, rzodkiewką i sałatą;;Sałata - mix sałat;75
 Kolacja;;;Sos winegret;20
-Kolacja;;;"Ser typu ""Feta""";40
+Kolacja;;;Ser typu "Feta";40
 Kolacja;;;Rzodkiewka;60
 Kolacja;;;Ogórek;222
 Śniadanie;Naleśnkowe rollsy z awokado i szynką;;Naleśniki suchy;160
 Śniadanie;;;Awokado;141
 Śniadanie;;;Migdały;20
 Śniadanie;;;Polędwica tzw. łososiowa;120
-Śniadanie;;;Czosnek;
-Śniadanie;;;Kolendra;
+Śniadanie;;;Czosnek;10
+Śniadanie;;;Kolendra;5
 Drugie śniadanie;Grejpfrut;;Grejpfrut;300
 Obiad;Pieczone udko z mizerią;Pieczone udko. Mizeria. Ziemniaki pokrojone w talarki. Ugotowane na parze.;Mięso z ud kurczaka, bez skóry;200
 Obiad;;;Ogórek;333
@@ -186,10 +184,9 @@ Obiad;;;Papryka żółta;150
 Obiad;;;Szpinak;20
 Obiad;;;Masło klarowane;15
 Obiad;;;Mleko kokosowe;100
-Obiad;;;"Ser typu ""Feta""";40
+Obiad;;;Ser typu "Feta";40
 Obiad;;;Mięso z piersi kurczaka;100
-Obiad;;;Curry;
-Obiad;;;Pieprz cytrynowy;
+Obiad;;;Curry;5
 Podwieczorek;Sałatka z kaszą, fasolką i rzodkiewką;;Kasza gryczana;36
 Podwieczorek;;;Fasola szparagowa;50
 Podwieczorek;;;Rzodkiewka;60
@@ -207,7 +204,7 @@ Kolacja;;;Oliwa z oliwek;8
 Drugie śniadanie;Sałatka z ogórkiem, rzodkiewką, serem feta i makaronem;;Ogórek;222
 Drugie śniadanie;;;Rzodkiewka;60
 Drugie śniadanie;;;Słonecznik, nasiona;30
-Drugie śniadanie;;;"Ser typu ""Feta""";40
+Drugie śniadanie;;;Ser typu "Feta";40
 Drugie śniadanie;;;Oliwa z oliwek;2
 Drugie śniadanie;;;Makaron penne pełnoziarnisty;35
 Obiad;Mintaj pieczony w sosie pomidorowym;Na klarowanym maśle szklimy starte na tarce warzywa. Zalewamy pomidorami. Dodajemy curry, słodką paprykę,sól i koperek. Redukujemy płyn do połowy. Rybę oprószamy solą i curry. Zalewamy sosem. Zapiekamy 15 minut w 200 stopniach.;Mintaj, świeży;250
@@ -216,7 +213,7 @@ Obiad;;;Marchew;105
 Obiad;;;Masło klarowane;15
 Obiad;;;Pomidory w puszce krojone;200
 Obiad;;;Ryż basmati;50
-Obiad;;;Koperek;
+Obiad;;;Koperek;5
 Podwieczorek;Pomelo z sezamem;;Pomelo;300
 Podwieczorek;;;Sezam, nasiona;13
 Kolacja;Cukinia zapiekana z papryką i cebulą;Cukinię przekrawamy na pół. Wkładamy do piekarnika nagrzanego do 200 stopni na 15 minut. Po tym czasie przy pomocy łyżeczki wydrążamy środek. Na klarowanym maśle podduszamy pokrojoną w kosteczkę cebulę. Do zrumienionej dodajemy pokrojoną w kosteczkę paprykę i smażymy aż połowa wody z papryki odparuje. Składniki z patelni mieszamy z posiekanym drobno wydrążonym środkiem z cukinii dodając pieprz i curry. Powstałym farszem wypełniamy cukinie i ponownie wstawiamy do piekarnika na 20minut.;Cukinia;287
@@ -258,7 +255,7 @@ Drugie śniadanie;;;Makaron penne pełnoziarnisty;35
 Obiad;Makaron w sosie pomidorowym z serem feta;Na oliwie podsmażamy pomidorki, aż odparuje woda. Dodajemy bazylię, mieszamy z makaronem i fetą.;Bazylia;4
 Obiad;;;Oliwa z oliwek;8
 Obiad;;;Makaron penne pełnoziarnisty;70
-Obiad;;;"Ser typu ""Feta""";50
+Obiad;;;Ser typu "Feta";50
 Obiad;;;Pomidory w puszce krojone;200
 Obiad;;;Migdały;10
 Podwieczorek;Kanapka z pesto i wędliną;;Chleb żytni razowy;62
@@ -315,7 +312,7 @@ Podwieczorek;;;Otręby - dowolne;6
 Podwieczorek;;;Banan;58
 Kolacja;Cukinia faszerowana marchewką, fetą i pomidorami;Cukinię przekrawamy na pół. Wkładamy do piekarnika nagrzanego do 200stopni na 15 minut. Z cukinii wydrążamy środek. Kroimy w kosteczkę, mieszamy ze startą na drobniutkiej tarce marchewką, pokruszoną fetą i pokrojonymi drobniutko suszonymi pomidorami. Napełniamy farszem łódeczki. Wkładamy do piekarnika na 15minut.;Cukinia;287
 Kolacja;;;Marchew;105
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Kolacja;;;Suszone pomidory;40
 Śniadanie;Koktajl szarlotkowy;;Płatki owsiane;40
 Śniadanie;;;Jabłko;100
@@ -377,14 +374,14 @@ Obiad;Cieciorka z cukinią i ryżem w mleku kokosowym;Na patelnię wlewamy mleko
 Obiad;;;Mleko kokosowe;115
 Obiad;;;Cukinia;225
 Obiad;;;Ryż basmati;60
-Obiad;;;Świerza kolendra;
+Obiad;;;Świerza kolendra;5
 Podwieczorek;Kanapka z hummusem i sałatą;;Chleb żytni razowy;62
 Podwieczorek;;;Hummus;20
 Podwieczorek;;;Sałata;5
 Kolacja;Sałatka z brokułem i serem feta;Ugotowane różyczki brokuła mieszamy z pestkami dyni i oliwą.;Dynia, pestki;15
 Kolacja;;;Oliwa z oliwek;8
 Kolacja;;;Brokuły;150
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Śniadanie;Koktajl śniadaniowy z czerwonymi owocami, i bananem;;Mleko roślinne dowolne;300
 Śniadanie;;;Czerwone owoce (dowolne);100
 Śniadanie;;;Płatki owsiane;30
@@ -452,7 +449,7 @@ Obiad;;;Oliwki marynowane, konserwowe;20
 Obiad;;;Kasza gryczana;60
 Obiad;;;Masło klarowane;10
 Obiad;;;Słonecznik, nasiona;15
-Obiad;;;Bulion warzywny;
+Obiad;;;Bulion warzywny;300
 Podwieczorek;Jogurt z dżemem i nasionami chia;Jogurt mieszamy z chia i płaską łyżką ksylitolu. Odstawiamy na 5 minut.Na dnie naczynia kładziemy konfiturę, zalewamy jogurtem.;Jogurt naturalny, 2% tłuszczu;250
 Podwieczorek;;;Chia nasiona;10
 Podwieczorek;;;Dżem jagodowy, niskosłodzony;15
@@ -474,7 +471,6 @@ Obiad;;;Marchew;340
 Obiad;;;Fasola szparagowa;50
 Obiad;;;Ziemniak;180
 Obiad;;;Oliwa z oliwek;2
-Obiad;;;Rękaw do pieczenia;
 Podwieczorek;Koktajl z kiwi i bananem;;Mleko roślinne dowolne;250
 Podwieczorek;;;Kiwi;81
 Podwieczorek;;;Orzechy dowolne;20
@@ -497,7 +493,7 @@ Obiad;;;Cukinia;225
 Podwieczorek;Dowolna słodkość;;Dowolna słodkość do 200 kcal.;60
 Kolacja;Sałatka z cieciorką, serem feta i pomidorem;;Sałata - mix sałat;75
 Kolacja;;;Sos winegret;20
-Kolacja;;;"Ser typu ""Feta""";30
+Kolacja;;;Ser typu "Feta";30
 Kolacja;;;Cieciorka gotowana na parze Bonduelle;40
 Kolacja;;;Dynia, pestki;10
 Kolacja;;;Pomidor;192
@@ -510,7 +506,7 @@ Drugie śniadanie;;;Oliwa z oliwek;8
 Drugie śniadanie;;;Dynia, pestki;15
 Drugie śniadanie;;;Pietruszka - liście;4
 Drugie śniadanie;;;Cieciorka gotowana na parze Bonduelle;40
-Drugie śniadanie;;;"Ser typu ""Feta""";21
+Drugie śniadanie;;;Ser typu "Feta";21
 Obiad;Penne z cukinią i pieczonym łososiem;Na oliwie podduszamy cukinię, dodajemy pieprz cytrynowy i pieczonego łososia. Mieszamy z makaronem i natką pietruszki.;Makaron penne pełnoziarnisty;70
 Obiad;;;Łosoś, świeży;100
 Obiad;;;Cukinia;225
@@ -522,7 +518,7 @@ Podwieczorek;;;Sałata;5
 Podwieczorek;;;Sok warzywny;250
 Kolacja;Sałatka z serem feta, oliwkami i pomidorem;;Sałata - mix sałat;75
 Kolacja;;;Sos winegret;20
-Kolacja;;;"Ser typu ""Feta""";40
+Kolacja;;;Ser typu "Feta";40
 Kolacja;;;Oliwki marynowane, konserwowe;30
 Kolacja;;;Pomidorki koktajlowe;70
 Śniadanie;Kanapka z ogórkiem, wędliną i sałatą;;Chleb żytni razowy;124
@@ -549,7 +545,7 @@ Kolacja;;;Papryka czerwona;150
 Kolacja;;;Masło klarowane;10
 Kolacja;;;Cukinia;100
 Kolacja;;;Pomidory w puszce krojone;400
-Kolacja;;;Świerza kolendra;
+Kolacja;;;Świerza kolendra;5
 Śniadanie;Koktajl z czerwonymi owocami i bananem;;Mleko roślinne dowolne;250
 Śniadanie;;;Otręby - dowolne;6
 Śniadanie;;;Czerwone owoce (dowolne);70
@@ -558,7 +554,7 @@ Kolacja;;;Świerza kolendra;
 Śniadanie;;;Sezam, nasiona;5
 Drugie śniadanie;Sałatka z pieczonym burakiem;Pieczemy 2 sztuki buraka (na kolejny dzień);Burak;292
 Drugie śniadanie;;;Orzechy dowolne;20
-Drugie śniadanie;;;"Ser typu ""Feta""";40
+Drugie śniadanie;;;Ser typu "Feta";40
 Drugie śniadanie;;;Sałaty - dowolne;75
 Drugie śniadanie;;;Sos winegret;10
 Obiad;Sałatka z kaszą, pietruszką i brokułem;Warzywa gotujemy na parze. Mieszamy je z ugotowaną kaszą, dodatkami i oliwą. Posypujemy zieleniną.;Groszek zielony;100
@@ -611,7 +607,6 @@ Obiad;;;Koper ogrodowy;8
 Obiad;;;Masło klarowane;15
 Obiad;;;Pomidory w puszce krojone;400
 Obiad;;;Ryż basmati;60
-Obiad;;;Pergamin do smażenia;
 Podwieczorek;Sałatka warzywna z marchewką, pietruszką i fasolą;Warzywa gotowane na parze, skropione oliwą.;Marchew;105
 Podwieczorek;;;Pietruszka - korzeń;50
 Podwieczorek;;;Oliwa z oliwek;2
@@ -694,7 +689,7 @@ Kolacja;;;Kasza jaglana;50
 Kolacja;;;Oliwa z oliwek;8
 Kolacja;;;Papryka czerwona;150
 Kolacja;;;Pieczarka uprawna, świeża;54
-Kolacja;;;"Ser typu ""Feta""";30
+Kolacja;;;Ser typu "Feta";30
 Śniadanie;Kanapka z pomidorem, pesto i wędliną;;Chleb żytni razowy;124
 Śniadanie;;;Pesto;40
 Śniadanie;;;Pomidor;192
@@ -738,7 +733,7 @@ Podwieczorek;;;Słonecznik, nasiona;10
 Podwieczorek;;;Otręby - dowolne;2
 Kolacja;Cukinia faszerowana marchewką, fetą i suszonymi pomidorami;Cukinię przekrawamy na pół. Wkładamy do piekarnika nagrzanego do 200 stopni na 15 minut. Z cukinii wydrążamy środek. Kroimy w kosteczkę, mieszamy ze startą na drobniutkiej tarce marchewką , pokruszoną fetą i pokrojonymi drobniutko suszonymi pomidorami. Napełniamy farszem łódeczki. Wkładamy do piekarnika na 15 minut.;Cukinia;287
 Kolacja;;;Marchew;105
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Kolacja;;;Suszone pomidory;40
 Śniadanie;Koktajl z truskawek i banana;;Płatki owsiane;30
 Śniadanie;;;Truskawki;70
@@ -761,7 +756,7 @@ Podwieczorek;;;Sałata;5
 Podwieczorek;;;Ogórek;111
 Kolacja;Sałatka z pomiorem i serem feta;;Pomidor;576
 Kolacja;;;Słonecznik, nasiona;15
-Kolacja;;;"Ser typu ""Feta""";40
+Kolacja;;;Ser typu "Feta";40
 Śniadanie;Omlet z papryką i szynką;;Jaja kurze całe;150
 Śniadanie;;;Masło klarowane;15
 Śniadanie;;;Szynka z indyka;45
@@ -778,7 +773,7 @@ Obiad;Sałatka z kaszy, warzyw i nasion z kolendrą;Kaszę gotujemy w osolonej w
 Obiad;;;Rzodkiewka;45
 Obiad;;;Ogórek;111
 Obiad;;;Słonecznik, nasiona;25
-Obiad;;;"Ser typu ""Feta""";42
+Obiad;;;Ser typu "Feta";42
 Podwieczorek;Kanapka z pesto i pomidorem;;Chleb żytni razowy;93
 Podwieczorek;;;Pesto;30
 Podwieczorek;;;Pomidor;192
@@ -811,7 +806,7 @@ Kolacja;Sałatka z ogórków;;Ogórek;200
 Kolacja;;;Ogórek małosolny;150
 Kolacja;;;Słonecznik, nasiona;15
 Kolacja;;;Koper ogrodowy;3
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Śniadanie;Pasta jajeczna;Jajka gotujemy na 3/4 ( 4 minuty od zagotoania) tzn. nie mogą być zupełnie na twardo. Ugotowane drobno siekamy, doprawiamy do smaku solą i koperkiem. Można dodać trochę musztardy do smaku.;Jaja kurze całe;100
 Śniadanie;;;Sałata;10
 Śniadanie;;;Chleb żytni razowy;124
@@ -835,7 +830,7 @@ Kolacja;;;Sos winegret;20
 Kolacja;;;Cukinia;225
 Kolacja;;;Dynia, pestki;20
 Kolacja;;;Rzodkiewka;90
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Śniadanie;Mus z kaszy i czerwonych owoców;Kaszę jaglaną zalać wrzątkiem. Odczekać 2-3 minuty. Zlać wrzątek i przelać kaszę na sitku zimną wodą. Tak przygotowaną kaszę ugotować. Wymieszać ze świeżymi owocami i dodatkami.;Kasza jaglana;40
 Śniadanie;;;Mleko roślinne dowolne;300
 Śniadanie;;;Chia nasiona;10
@@ -902,14 +897,14 @@ Kolacja;Sałatka z pomidorem, papryką i serem feta;;Papryka czerwona;150
 Kolacja;;;Pietruszka - liście;4
 Kolacja;;;Pomidor;384
 Kolacja;;;Sos winegret;10
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Śniadanie;Kanapka z hummusem i szczypiorkiem;;Chleb żytni razowy;124
 Śniadanie;;;Hummus;40
 Śniadanie;;;Szczypiorek;8
 Drugie śniadanie;Sałatka z makaronem, serem feta i gruszką;;Makaron penne pełnoziarnisty;60
 Drugie śniadanie;;;Orzechy dowolne;20
 Drugie śniadanie;;;Oliwa z oliwek;5
-Drugie śniadanie;;;"Ser typu ""Feta""";42
+Drugie śniadanie;;;Ser typu "Feta";42
 Drugie śniadanie;;;Gruszka;156
 Obiad;Dorsz z kapustą;Na klarowanym maśle podduszamy pokrojoną kapustę. Przykrywamy pokrywką, dusimy do miękkości. Solimy, doprawiamy koperkiem. Dorsza oprószamy solą i koperkiem. Zawijamy w papier do pieczenia. Dusimy na parze lub smażymy na suchej patelni.;Kapusta biała;200
 Obiad;;;Masło klarowane;10
@@ -987,7 +982,7 @@ Kolacja;;;Pomidor;200
 Kolacja;;;Migdały;20
 Kolacja;;;Chleb żytni razowy;31
 Kolacja;;;Sos winegret;20
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Śniadanie;Jajka na miękko z wędliną i pesto;;Jaja kurze całe;100
 Śniadanie;;;Chleb żytni razowy;62
 Śniadanie;;;Szynka z indyka;50
@@ -997,7 +992,7 @@ Drugie śniadanie;;;Groszek zielony;50
 Drugie śniadanie;;;Oliwa z oliwek;8
 Drugie śniadanie;;;Słonecznik, nasiona;20
 Drugie śniadanie;;;Ogórek;111
-Drugie śniadanie;;;"Ser typu ""Feta""";21
+Drugie śniadanie;;;Ser typu "Feta";21
 Obiad;Pierś z kurczaka z warzywami;Warzywa ścieramy na tagliatelle przy pomocy obieraczki do warzyw. Szklimy na maśle klarowanym. W razie potrzeby podlewamy lekko wodą. Mięso oprószamy ziołami prowansalskimi i solą. Zawijamy w pergamin. Smażymy na suchej patelni lub gotujemy na parze. Ziemniaki pokrojone w talarki, gotowane na parze.;Marchew;105
 Obiad;;;Pietruszka - korzeń;50
 Obiad;;;Masło klarowane;10
@@ -1008,7 +1003,7 @@ Podwieczorek;;;Hummus;20
 Podwieczorek;;;Rzodkiewka;30
 Kolacja;Pieczone warzywa;Warzywa kroimy w kawałki. Zalewamy olejem, mieszamy. Pieczemu w 180 stopniach przez godzinę. Co 15 minut mieszamy. Posypujemy świeżą kolendrą lub inną zieleniną. To danie można też wykonać bez użycia piekarnika po prostu przesmażającwarzywa bez przykrycia. Gotowe danie posypujemy rozkruszoną fetą.;Papryka czerwona;150
 Kolacja;;;Cukinia;100
-Kolacja;;;"Ser typu ""Feta""";42
+Kolacja;;;Ser typu "Feta";42
 Kolacja;;;Olej rzepakowy uniwersalny;8
 Kolacja;;;Dynia, pestki;20
 Śniadanie;Koktajl z czerwonych owoców i banana;;Mleko roślinne dowolne;300
@@ -1059,7 +1054,7 @@ Kolacja;Sałatka z papryką, pomidorem i serem feta;;Papryka czerwona;150
 Kolacja;;;Sos winegret;10
 Kolacja;;;Pietruszka - liście;4
 Kolacja;;;Pomidor;250
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Śniadanie;Kanapka z sałatą, serem żołtym i pomidorem;;Chleb żytni razowy;124
 Śniadanie;;;Sałata;5
 Śniadanie;;;Ser żółty;60
@@ -1101,7 +1096,7 @@ Kolacja;Sałata z pomidorem i serem feta;;Sałata - mix sałat;75
 Kolacja;;;Pomidor;192
 Kolacja;;;Sos winegret;10
 Kolacja;;;Słonecznik, nasiona;15
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Śniadanie;Placuszki owocowe;Owoce miksujemy z żółtkiem. Mieszamy z płatkami. Odstawiamy na 5 minut. Mieszamy z pianą z białek. Smażymy.;Masło klarowane;15
 Śniadanie;;;Płatki owsiane;50
 Śniadanie;;;Czerwone owoce (dowolne);100
@@ -1127,7 +1122,7 @@ Kolacja;Sałatka z pomidorem i serem feta;;Sałata - mix sałat;75
 Kolacja;;;Sos winegret;20
 Kolacja;;;Pomidor;192
 Kolacja;;;Migdały;10
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Śniadanie;Kanapka z pesto i pomidorem;;Chleb żytni razowy;124
 Śniadanie;;;Pesto;40
 Śniadanie;;;Pomidor;192
@@ -1150,7 +1145,7 @@ Kolacja;Pieczone warzywa;Warzywa kroimy w kawałki. Zalewamy olejem, mieszamy. P
 Kolacja;;;Cukinia;225
 Kolacja;;;Olej rzepakowy uniwersalny;15
 Kolacja;;;Słonecznik, nasiona;15
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Śniadanie;Kanapka z wędliną, pomidorem sałatą i pesto;;Chleb żytni razowy;124
 Śniadanie;;;Sałata;10
 Śniadanie;;;Szynka z indyka;60
@@ -1212,7 +1207,7 @@ Kolacja;Sałatka z pomidorem i serem feta;;Sałata - mix sałat;75
 Kolacja;;;Sos winegret;20
 Kolacja;;;Słonecznik, nasiona;15
 Kolacja;;;Pomidor;192
-Kolacja;;;"Ser typu ""Feta""";42
+Kolacja;;;Ser typu "Feta";42
 Śniadanie;Kanapka z pomidorem, pesto i wędliną;;Chleb żytni razowy;124
 Śniadanie;;;Pesto;20
 Śniadanie;;;Szynka z indyka;60
@@ -1231,7 +1226,7 @@ Podwieczorek;Jabłko z orzechami;;Orzechy dowolne;16
 Podwieczorek;;;Jabłko;188
 Kolacja;Cukinia faszerowana marchewką, fetą i suszonymi pomidorami;Cukinię przekrawamy na pół. Wkładamy do piekarnika nagrzanego do 200 stopni na 15 minut. Z cukinii wydrążamy środek. Kroimy w kosteczkę, mieszamy ze startą na drobniutkiej tarce marchewką, pokruszoną fetą i pokrojonymi drobniutko suszonymi pomidorami. Napełniamy farszem łódeczki. Wkładamy do piekarnika na 15 minut.;Cukinia;287
 Kolacja;;;Marchew;105
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Kolacja;;;Suszone pomidory;40
 Śniadanie;Omlet ze szczypiorkiem + pomidor z pesto;;Jaja kurze całe;150
 Śniadanie;;;Masło klarowane;15
@@ -1258,7 +1253,7 @@ Podwieczorek;;;Sok warzywno - owocowy (50/50);250
 Kolacja;Pieczone warzywa;Warzywa kroimy w kawałki. Zalewamy olejem, mieszamy. Pieczemu w 180 stopniach przez godzinę. Co 15 minut mieszamy. Posypujemy świeżą kolendrą lub inną zieleniną.;Papryka czerwona;150
 Kolacja;;;Cukinia;225
 Kolacja;;;Olej rzepakowy uniwersalny;10
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Śniadanie;Kanapka z sałatą, serem żołtym i pomidorem;;Chleb żytni razowy;93
 Śniadanie;;;Sałata;10
 Śniadanie;;;Ser żółty;45
@@ -1279,7 +1274,7 @@ Podwieczorek;;;Migdały;50
 Kolacja;Sałatka z papryką i serem feta;;Sałata - mix sałat;75
 Kolacja;;;Sos winegret;20
 Kolacja;;;Papryka czerwona;244
-Kolacja;;;"Ser typu ""Feta""";21
+Kolacja;;;Ser typu "Feta";21
 Śniadanie;Naleśnik suchy z awokado i pomidorem;;Naleśniki suchy;160
 Śniadanie;;;Awokado;70
 Śniadanie;;;Pomidor;192

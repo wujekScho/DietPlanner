@@ -42,7 +42,7 @@ public class DBFeeder {
                     .map(s -> s.split(";"))
                     .forEach(s -> {
                         Product product = new Product();
-                        product.setName(s[0]);
+                        product.setName(s[0].replaceAll("^[^a-zA-ZĘÓĄŚŁŻŹĆŃęóąśłżźćń]", ""));
                         Optional<ProductType> productType = Arrays.stream(ProductType.values())
                                 .filter(p -> p.getType().equalsIgnoreCase(s[1].trim()))
                                 .findFirst();
@@ -71,7 +71,7 @@ public class DBFeeder {
             DayMeals dayMeals = null;
             Meal meal = null;
             Path path = Paths.get(ClassLoader.getSystemResource("imports/days.txt").toURI());
-
+            int i = 1;
             for (String line : Files.readAllLines(path)) {
                 String[] fields = line.split(";", -1);
                 String type = fields[0].replaceAll("^[^a-zA-ZĘÓĄŚŁŻŹĆŃęóąśłżźćń]", "");
@@ -79,7 +79,8 @@ public class DBFeeder {
                 String recipe = fields[2].trim();
                 String productName = fields[3].trim();
                 String weight = fields[4].trim();
-                System.out.println(String.format("%s|%s|%s|%s|%s", type, mealName, recipe, productName, weight));
+                System.out.println(String.format("%d|%s|%s|%s|%s|%s", i, type, mealName, recipe, productName, weight));
+                i++;
                 //Check if we process new meal
                 if (!type.equalsIgnoreCase(mealType)) {
                     mealType = type;
@@ -90,12 +91,8 @@ public class DBFeeder {
                         }
                         dayMeals = new DayMeals();
                     }
-                    //Initalization of new meal
-                    if (meal != null) {
-                        mealRepository.save(meal);
-                    }
-                    meal = new Meal();
 
+                    meal = new Meal();
                     Optional<MealType> mealType1 = Arrays.stream(pl.wujekscho.dietplanner.entity.MealType.values())
                             .filter(m -> m.getType().trim().equalsIgnoreCase(type))
                             .findFirst();
@@ -103,6 +100,10 @@ public class DBFeeder {
                     meal.setMealType(mealType1.get());
                     if (!recipe.isEmpty()) {
                         meal.setRecipe(recipe);
+                    }
+                    //Initalization of new meal
+                    if (meal != null) {
+                        mealRepository.save(meal);
                     }
                     dayMeals.setMeal(meal);
                 }

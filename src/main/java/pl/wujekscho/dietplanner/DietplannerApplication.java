@@ -24,17 +24,5 @@ public class DietplannerApplication {
         if (dayMealsRepository.count() == 0) {
             dbFeeder.importDays();
         }
-//        dbFeeder.importDays();
-//        MealProduct awokado = new MealProduct(141, productRepository.getOne(1L));
-//        MealProduct banan = new MealProduct(115, productRepository.getOne(2L));
-//        mealProductRepository.save(awokado);
-//        mealProductRepository.save(banan);
-//        Meal salatkaAwokado = new Meal("Sałatka owocowa", "Wymieszaj banana z pokrojonym awokado.", MealType.DRUGIE_ŚNIADANIE);
-//        List<MealProduct> mealProducts = salatkaAwokado.getMealProducts();
-//        mealProducts.add(awokado);
-//        mealProducts.add(banan);
-//        mealRepository.save(salatkaAwokado);
-//        DayMeals day1 = new DayMeals(salatkaAwokado, salatkaAwokado, salatkaAwokado, salatkaAwokado, salatkaAwokado);
-//        dayMealsRepository.save(day1);
     }
 }
