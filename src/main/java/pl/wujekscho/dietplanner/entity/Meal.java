@@ -27,7 +27,7 @@ public class Meal implements Serializable, EntityModel {
     @Lob
     @Column(length = 1000)
     String recipe;
-    @ManyToMany
+    @OneToMany
     List<MealProduct> mealProducts = new ArrayList<>();
     Integer weight = 0;
     Integer calories = 0;
@@ -60,10 +60,10 @@ public class Meal implements Serializable, EntityModel {
         this.carbohydrates = 0.0;
         for (MealProduct mealProduct : mealProducts) {
             this.weight += mealProduct.getWeight();
-            this.calories += mealProduct.getProduct().getCalories();
-            this.protein += mealProduct.getProduct().getProtein();
-            this.fat += mealProduct.getProduct().getFat();
-            this.carbohydrates += mealProduct.getProduct().getCarbohydrates();
+            this.calories += mealProduct.getCalories();
+            this.protein += mealProduct.getProtein();
+            this.fat += mealProduct.getFat();
+            this.carbohydrates += mealProduct.getCarbohydrates();
         }
     }
 }
