@@ -24,12 +24,12 @@ public class Product implements Serializable, EntityModel {
     ProductType productType;
     @Column(nullable = false)
     Integer calories;
-    @Column(nullable = false, scale = 1)
-    Double protein;
-    @Column(nullable = false, scale = 1)
-    Double fat;
-    @Column(nullable = false, scale = 1)
-    Double carbohydrates;
+    @Column(columnDefinition = "DECIMAL(7,1)")
+    Double protein = 0.0;
+    @Column(columnDefinition = "DECIMAL(7,1)")
+    Double fat = 0.0;
+    @Column(columnDefinition = "DECIMAL(7,1)")
+    Double carbohydrates = 0.0;
     String homeMeasureType;
     Double homeMeasureWeightRatio;
     Double homeMeasureStep;

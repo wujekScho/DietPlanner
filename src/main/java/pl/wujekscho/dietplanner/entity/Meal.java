@@ -31,11 +31,11 @@ public class Meal implements Serializable, EntityModel {
     List<MealProduct> mealProducts = new ArrayList<>();
     Integer weight = 0;
     Integer calories = 0;
-    @Column(scale = 1)
+    @Column(columnDefinition = "DECIMAL(7,1)")
     Double protein = 0.0;
-    @Column(scale = 1)
+    @Column(columnDefinition = "DECIMAL(7,1)")
     Double fat = 0.0;
-    @Column(scale = 1)
+    @Column(columnDefinition = "DECIMAL(7,1)")
     Double carbohydrates = 0.0;
 
 
