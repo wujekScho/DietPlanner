@@ -1,10 +1,7 @@
 package pl.wujekscho.dietplanner.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.wujekscho.dietplanner.entity.Product;
 import pl.wujekscho.dietplanner.repository.ProductRepository;
 
@@ -23,12 +20,22 @@ public class ProductController implements EntityController<Product> {
     @Override
     @GetMapping(path = "")
     public List<Product> getAll() {
-        return productRepository.findAll();
+        return productRepository.findOrderByNameAsc();
     }
 
     @Override
     @GetMapping(path = "/{id}")
     public Product getById(@PathVariable Long id) {
         return productRepository.getOne(id);
+    }
+
+    @PostMapping(path = "")
+    public void save(@RequestBody Product product) {
+        productRepository.save(product);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+        productRepository.deleteById(id);
     }
 }

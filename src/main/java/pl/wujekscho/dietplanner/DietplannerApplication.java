@@ -24,6 +24,6 @@ public class DietplannerApplication {
         if (dayMealsRepository.count() == 0) {
             dbFeeder.importDays();
         }
-        System.out.println(System.getenv("API_HOST"));
+
     }
 }
