@@ -20,7 +20,7 @@ public class ProductController implements EntityController<Product> {
     @Override
     @GetMapping(path = "")
     public List<Product> getAll() {
-        return productRepository.findOrderByNameAsc();
+        return productRepository.findAllByOrderByNameAsc();
     }
 
     @Override

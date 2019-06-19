@@ -10,5 +10,5 @@ import java.util.List;
 public interface ProductRepository extends JpaRepository<Product, Long> {
     Product findFirstByName(String name);
 
-    List<Product> findOrderByNameAsc();
+    List<Product> findAllByOrderByNameAsc();
 }
