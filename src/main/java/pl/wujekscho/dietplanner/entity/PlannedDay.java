@@ -1,5 +1,6 @@
 package pl.wujekscho.dietplanner.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,6 +21,7 @@ public class PlannedDay {
     LocalDate day;
     @ManyToOne
     DayMeals dayMeals;
+    @JsonIgnore
     @ManyToOne
     User user;
 

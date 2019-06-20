@@ -12,21 +12,20 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/meal_products")
-public class MealProductController implements EntityController<MealProduct> {
+public class MealProductController {
     private final MealProductRepository mealProductRepository;
 
-    @Autowired
     public MealProductController(MealProductRepository mealProductRepository) {
         this.mealProductRepository = mealProductRepository;
     }
 
-    @Override
+
     @GetMapping("")
     public List<MealProduct> getAll() {
         return mealProductRepository.findAll();
     }
 
-    @Override
+
     @GetMapping("/{id}")
     public MealProduct getById(@PathVariable Long id) {
         return mealProductRepository.getOne(id);
