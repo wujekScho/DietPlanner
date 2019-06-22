@@ -1,5 +1,6 @@
 package pl.wujekscho.dietplanner.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -46,6 +47,7 @@ public class DayMeals implements Serializable {
         this.supper = supper;
     }
 
+    @JsonIgnore
     public List<Meal> getDayMeals() {
         return Arrays.asList(this.breakfast, this.brunch, this.dinner, this.tea, this.supper);
     }

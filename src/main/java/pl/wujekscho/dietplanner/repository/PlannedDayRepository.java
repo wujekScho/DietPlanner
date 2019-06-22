@@ -8,6 +8,6 @@ import pl.wujekscho.dietplanner.entity.PlannedDay;
 import java.util.List;
 
 public interface PlannedDayRepository extends JpaRepository<PlannedDay, Long> {
-    @Query("SELECT p FROM PlannedDay p WHERE p.user.id = :id AND p.day > CURRENT_DATE ORDER BY p.day")
-    List<PlannedDay> findAllByUserIdOrderByDay(@Param("id") Long id);
+    @Query("SELECT p FROM PlannedDay p WHERE p.user.id = :id AND p.mealsDate > CURRENT_DATE ORDER BY p.mealsDate")
+    List<PlannedDay> findAllByUserIdOrderByMealsDate(@Param("id") Long id);
 }

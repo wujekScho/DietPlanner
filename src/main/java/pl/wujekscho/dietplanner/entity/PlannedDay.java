@@ -18,15 +18,16 @@ public class PlannedDay {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    LocalDate day;
+    @Column(nullable = false)
+    LocalDate mealsDate;
     @ManyToOne
     DayMeals dayMeals;
     @JsonIgnore
     @ManyToOne
     User user;
 
-    public PlannedDay(LocalDate day, DayMeals dayMeals, User user) {
-        this.day = day;
+    public PlannedDay(LocalDate mealsDate, DayMeals dayMeals, User user) {
+        this.mealsDate = mealsDate;
         this.dayMeals = dayMeals;
         this.user = user;
     }
