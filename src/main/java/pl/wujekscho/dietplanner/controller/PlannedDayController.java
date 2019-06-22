@@ -17,7 +17,7 @@ public class PlannedDayController {
         this.plannedDayService = plannedDayService;
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public PlannedDay getOneById(@PathVariable Long id) {
         return plannedDayService.findById(id);
     }

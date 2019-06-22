@@ -11,4 +11,8 @@ public interface PlannedDayRepository extends JpaRepository<PlannedDay, Long> {
     @Query("SELECT p FROM PlannedDay p WHERE p.user.id = :id AND p.mealsDate >= CURRENT_DATE ORDER BY p.mealsDate")
     List<PlannedDay> findAllByUserIdOrderByMealsDate(@Param("id") Long id);
 
+    @Query("SELECT p FROM PlannedDay p WHERE p.id = :id")
+    PlannedDay getOne(@Param("id") Long id);
+
+
 }
