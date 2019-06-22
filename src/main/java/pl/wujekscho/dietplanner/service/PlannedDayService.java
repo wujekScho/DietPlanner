@@ -28,6 +28,10 @@ public class PlannedDayService {
         return plannedDayRepository.findAllByUserIdOrderByMealsDate(userId);
     }
 
+    public PlannedDay findById(Long id) {
+        return plannedDayRepository.getOne(id);
+    }
+
     public PlannedDay save(PlannedDayId plannedDayId) {
         DayMeals dayMeals = dayMealsRepository.getOne(plannedDayId.getDayMealsId());
         User user = userRepository.getOne(plannedDayId.getUserId());
@@ -35,6 +39,11 @@ public class PlannedDayService {
         PlannedDay plannedDay = new PlannedDay(mealsDate, dayMeals, user);
         System.out.println(plannedDay.getMealsDate());
         return plannedDayRepository.save(plannedDay);
+    }
+
+    public void delete(Long id) {
+        plannedDayRepository.deleteById(id);
+
     }
 
 }

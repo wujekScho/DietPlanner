@@ -17,15 +17,23 @@ public class PlannedDayController {
         this.plannedDayService = plannedDayService;
     }
 
+    @GetMapping("{id}")
+    public PlannedDay getOneById(@PathVariable Long id) {
+        return plannedDayService.findById(id);
+    }
+
     @GetMapping("/user/{id}")
     public List<PlannedDay> getAllByUserId(@PathVariable Long id) {
         return plannedDayService.findAllByUserId(id);
     }
 
     @PostMapping(path = "", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void savePlannedDay(@RequestBody PlannedDayId plannedDay) {
-        System.out.println(plannedDay);
+    public void save(@RequestBody PlannedDayId plannedDay) {
         plannedDayService.save(plannedDay);
     }
 
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+        plannedDayService.delete(id);
+    }
 }
