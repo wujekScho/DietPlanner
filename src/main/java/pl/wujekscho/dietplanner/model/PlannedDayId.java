@@ -9,6 +9,4 @@ public class PlannedDayId {
     private LocalDate mealsDate;
     private Long dayMealsId;
     private Long userId;
-
-
 }
