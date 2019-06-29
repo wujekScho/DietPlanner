@@ -30,4 +30,8 @@ public class UserService {
         user.setPassword(passwordHash);
         userRepository.save(user);
     }
+
+    public User getByUsername(String username) {
+        return userRepository.findByUsername(username);
+    }
 }

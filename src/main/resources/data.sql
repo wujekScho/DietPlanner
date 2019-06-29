@@ -10,3 +10,8 @@ INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `u
 INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('4', '2019-06-28', '2', '1');
 INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('7', '2019-06-29', '5', '1');
 INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('8', '2019-06-30', '5', '1');
+INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('9', '2019-07-01', '1', '3');
+INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('10', '2019-07-02', '10', '3');
+INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('11', '2019-06-28', '2', '3');
+INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('12', '2019-06-29', '5', '3');
+INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('13', '2019-06-30', '5', '3');
