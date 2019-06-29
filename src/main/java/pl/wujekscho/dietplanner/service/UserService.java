@@ -7,6 +7,8 @@ import pl.wujekscho.dietplanner.entity.UserRole;
 import pl.wujekscho.dietplanner.repository.UserRepository;
 import pl.wujekscho.dietplanner.repository.UserRoleRepository;
 
+import javax.transaction.Transactional;
+
 @Service
 public class UserService {
     private static final String DEFAULT_ROLE = "ROLE_USER";
@@ -20,6 +22,7 @@ public class UserService {
         this.passwordEncoder = passwordEncoder;
     }
 
+    @Transactional
     public void addWithDefaultRole(User user) {
         UserRole defaultRole = roleRepository.findByRole(DEFAULT_ROLE);
         user.getRoles().add(defaultRole);

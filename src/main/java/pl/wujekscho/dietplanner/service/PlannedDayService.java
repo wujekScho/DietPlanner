@@ -92,7 +92,6 @@ public class PlannedDayService {
         List<ShoppingListProduct> sortedShoppingList = groupedShoppingList.stream()
                 .sorted(Comparator.comparing(ShoppingListProduct::getType).thenComparing(ShoppingListProduct::getName))
                 .collect(Collectors.toList());
-
         return sortedShoppingList;
     }
 }

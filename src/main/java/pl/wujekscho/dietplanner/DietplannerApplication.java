@@ -4,7 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import pl.wujekscho.dietplanner.dbtools.DBFeeder;
-import pl.wujekscho.dietplanner.entity.User;
 import pl.wujekscho.dietplanner.repository.*;
 import pl.wujekscho.dietplanner.service.UserService;
 
@@ -25,10 +24,5 @@ public class DietplannerApplication {
         if (dayMealsRepository.count() == 0) {
             dbFeeder.importDays();
         }
-
-        User user = new User("admin", "schodziak");
-        userService.addWithDefaultRole(user); //todo tu wali błędem
-
-
     }
 }

@@ -32,11 +32,6 @@ public class PlannedDayController {
     public List<ShoppingListProduct> getShoppingList(@RequestBody List<Long> plannedDaysIds) {
         return plannedDayService.getShoppingList(plannedDaysIds);
     }
-//
-//    @GetMapping(path = "/shopping-list", consumes = MediaType.APPLICATION_JSON_VALUE)
-//    public void getShoppingList(@RequestBody int[] plannedDaysIds) {
-//        System.out.println(plannedDaysIds);
-//    }
 
     @PostMapping(path = "", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void save(@RequestBody PlannedDayId plannedDay) {

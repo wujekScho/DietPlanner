@@ -1,8 +1,10 @@
 INSERT INTO `dietplanner`.`user_roles` (`id`, `role`, `description`) VALUES ('1', 'ROLE_USER', 'default role for user');
 INSERT INTO `dietplanner`.`users` (`id`, `password`, `username`) VALUES ('1', 'test', 'secret');
 INSERT INTO `dietplanner`.`users` (`id`, `password`, `username`) VALUES ('2', 'waldek', 'secret');
+INSERT INTO `dietplanner`.`users` (`id`, `password`, `username`) VALUES ('3', '{bcrypt}$2a$10$yPF5E2Ew4zMzlAyGeL34TOeX2rXRWRgi77ZSw1glX4BCvGisW0Gey', 'admin');
 INSERT INTO `dietplanner`.`users_roles` (`user_id`, `roles_id`) VALUES ('1', '1');
 INSERT INTO `dietplanner`.`users_roles` (`user_id`, `roles_id`) VALUES ('2', '1');
+INSERT INTO `dietplanner`.`users_roles` (`user_id`, `roles_id`) VALUES ('3', '1');
 INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('1', '2019-07-01', '1', '1');
 INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('3', '2019-07-02', '10', '1');
 INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('4', '2019-06-28', '2', '1');
