@@ -40,6 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf().disable() //.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()).and()
                 .authorizeRequests()
                 .antMatchers("/user/check/*").permitAll()
+                .antMatchers("/user/register").permitAll()
 //                .antMatchers("/register").permitAll()
                 .anyRequest().authenticated();
 //                .and()
