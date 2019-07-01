@@ -38,4 +38,9 @@ public class UserService {
     public User getById(Long id) {
         return userRepository.getOne(id);
     }
+
+    public boolean checkUsernameAvailability(String username) {
+        User user = getByUsername(username);
+        return user == null;
+    }
 }
