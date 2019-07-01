@@ -32,10 +32,8 @@ public class UserController {
         return userService.checkUsernameAvailability(username);
     }
 
-    @PostMapping(path = "", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(path = "/register", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void addUserWithDefaultRole(@RequestBody User user) {
         userService.addWithDefaultRole(user);
     }
-
-
 }

@@ -33,7 +33,7 @@ public class PlannedDayController {
         return plannedDayService.getShoppingList(plannedDaysIds);
     }
 
-    @PostMapping(path = "/register", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(path = "", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void save(@RequestBody PlannedDayId plannedDay) {
         plannedDayService.save(plannedDay);
     }
