@@ -13,3 +13,15 @@ INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `u
 INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('11', '2019-07-03', '2', '2');
 INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('12', '2019-07-04', '5', '2');
 INSERT INTO `dietplanner`.`planned_days` (`id`, `meals_date`, `day_meals_id`, `user_id`) VALUES ('13', '2019-07-05', '5', '2');
+INSERT INTO `dietplanner`.`user_weight_over_time` (`user_id`, `weight_over_time`, `measurement_date`) VALUES ('1', '85', '2019-06-01');
+INSERT INTO `dietplanner`.`user_weight_over_time` (`user_id`, `weight_over_time`, `measurement_date`) VALUES ('1', '84.5', '2019-06-03');
+INSERT INTO `dietplanner`.`user_weight_over_time` (`user_id`, `weight_over_time`, `measurement_date`) VALUES ('1', '83', '2019-06-06');
+INSERT INTO `dietplanner`.`user_weight_over_time` (`user_id`, `weight_over_time`, `measurement_date`) VALUES ('1', '82', '2019-06-10');
+INSERT INTO `dietplanner`.`user_weight_over_time` (`user_id`, `weight_over_time`, `measurement_date`) VALUES ('1', '82.5', '2019-06-15');
+INSERT INTO `dietplanner`.`user_weight_over_time` (`user_id`, `weight_over_time`, `measurement_date`) VALUES ('1', '82', '2019-06-20');
+INSERT INTO `dietplanner`.`user_weight_over_time` (`user_id`, `weight_over_time`, `measurement_date`) VALUES ('2', '85', '2019-06-01');
+INSERT INTO `dietplanner`.`user_weight_over_time` (`user_id`, `weight_over_time`, `measurement_date`) VALUES ('2', '84.5', '2019-06-03');
+INSERT INTO `dietplanner`.`user_weight_over_time` (`user_id`, `weight_over_time`, `measurement_date`) VALUES ('2', '83', '2019-06-06');
+INSERT INTO `dietplanner`.`user_weight_over_time` (`user_id`, `weight_over_time`, `measurement_date`) VALUES ('2', '82', '2019-06-10');
+INSERT INTO `dietplanner`.`user_weight_over_time` (`user_id`, `weight_over_time`, `measurement_date`) VALUES ('2', '82.5', '2019-06-15');
+INSERT INTO `dietplanner`.`user_weight_over_time` (`user_id`, `weight_over_time`, `measurement_date`) VALUES ('2', '82', '2019-06-20');
