@@ -61,7 +61,7 @@ public class UserService {
         Double weight = weightMeasurement.getWeight();
         Map<LocalDate, Double> weightOverTime = user.getWeightOverTime();
         if (weightOverTime.containsKey(measurementDate)) {
-            throw new ResponseStatusException(HttpStatus.CONFLICT, "not_unique_date"); //todo przetestować to
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "not_unique_date");
         }
         weightOverTime.put(measurementDate, weight);
         user.setWeightOverTime(weightOverTime);
