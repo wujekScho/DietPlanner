@@ -18,11 +18,11 @@ public class DietplannerApplication {
         ProductRepository productRepository = ctx.getBean(ProductRepository.class);
         DayMealsRepository dayMealsRepository = ctx.getBean(DayMealsRepository.class);
         DBFeeder dbFeeder = ctx.getBean(DBFeeder.class);
-        if (productRepository.count() == 0) {
+//        if (productRepository.count() == 0) {
             dbFeeder.importProducts();
-        }
-        if (dayMealsRepository.count() == 0) {
+//        }
+//        if (dayMealsRepository.count() == 0) {
             dbFeeder.importDays();
-        }
+//        }
     }
 }

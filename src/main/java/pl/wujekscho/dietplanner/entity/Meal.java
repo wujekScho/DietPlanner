@@ -21,7 +21,6 @@ public class Meal implements Serializable {
     Long id;
     @Column(nullable = false)
     String name;
-    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     MealType mealType;
     @Column(length = 1000)

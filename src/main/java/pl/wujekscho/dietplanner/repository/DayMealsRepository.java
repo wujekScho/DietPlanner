@@ -11,6 +11,6 @@ import java.util.List;
 @Repository
 public interface DayMealsRepository extends JpaRepository<DayMeals, Long> {
 
-    @Query("SELECT d FROM DayMeals d WHERE d.user.id=null OR d.user.id = :id")
+    @Query("SELECT d FROM DayMeals d WHERE d.user.id=null OR d.user.id = :id ORDER BY d.user.id DESC")
     List<DayMeals> getAllByUserId(@Param("id") Long id);
 }
