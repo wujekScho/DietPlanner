@@ -24,7 +24,6 @@ public class Meal implements Serializable {
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     MealType mealType;
-    @Lob
     @Column(length = 1000)
     String recipe;
     @OneToMany
@@ -37,6 +36,8 @@ public class Meal implements Serializable {
     Double fat = 0.0;
     @Column(columnDefinition = "DECIMAL(7,1)")
     Double carbohydrates = 0.0;
+    @ManyToOne
+    User user;
 
 
     public Meal(String name, MealType mealType) {

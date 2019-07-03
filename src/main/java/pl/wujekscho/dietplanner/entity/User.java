@@ -1,5 +1,6 @@
 package pl.wujekscho.dietplanner.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,6 +23,7 @@ public class User {
     String username;
     @Column(nullable = false)
     String password;
+    @JsonIgnore
     @OneToMany(mappedBy = "user")
     List<PlannedDay> plannedDays = new ArrayList<>();
     @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)

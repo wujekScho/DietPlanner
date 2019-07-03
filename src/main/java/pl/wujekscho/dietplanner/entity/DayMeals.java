@@ -30,6 +30,8 @@ public class DayMeals implements Serializable {
     Meal tea;
     @ManyToOne(fetch = FetchType.EAGER)
     Meal supper;
+    @ManyToOne
+    User user;
     Integer weight = 0;
     Integer calories = 0;
     @Column(columnDefinition = "DECIMAL(7,1)")

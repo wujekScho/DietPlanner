@@ -33,6 +33,8 @@ public class Product implements Serializable{
     String homeMeasureType;
     Double homeMeasureWeightRatio;
     Double homeMeasureStep;
+    @ManyToOne
+    User user;
 
     public Product(String name, ProductType productType, Integer calories, Double protein, Double fat, Double carbohydrates) {
         this.name = name;

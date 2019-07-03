@@ -28,6 +28,8 @@ public class MealProduct implements Serializable{
     Double fat = 0.0;
     @Column(columnDefinition = "DECIMAL(7,1)")
     Double carbohydrates = 0.0;
+    @ManyToOne
+    User user;
 
 
     public MealProduct(Integer weight, Product product) {
