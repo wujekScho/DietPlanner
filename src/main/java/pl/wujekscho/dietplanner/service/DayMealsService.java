@@ -26,7 +26,11 @@ public class DayMealsService {
     }
 
     public List<DayMeals> findAllByUserId(Long id) {
-        return dayMealsRepository.getAllByUserId(id);
+        List<DayMeals> dayMealsList = dayMealsRepository.getAllByUserId(id);
+        dayMealsList.forEach(dayMeals -> {
+            calibrateToNeeds(dayMeals, id);
+        });
+        return dayMealsList;
     }
 
     public DayMeals getById(Long id) {
@@ -42,5 +46,19 @@ public class DayMealsService {
         dayMeals.setTea(mealRepository.getOne(dayMealsId.getTeaId()));
         dayMeals.setSupper(mealRepository.getOne(dayMealsId.getSupperId()));
         dayMealsRepository.save(dayMeals);
+    }
+
+    public void calibrateToNeeds(DayMeals dayMeals, Long userId) {
+        int caloriesNeeded = userRepository.getOne(userId).getCaloriesNeeded();
+        int dayMealsCalories = dayMeals.getCalories();
+        double ratio = (double) caloriesNeeded / dayMealsCalories;
+        dayMeals.getDayMeals().forEach(meal -> {
+            meal.getMealProducts().forEach(mealProduct -> {
+                mealProduct.setWeight(Math.round((int) (mealProduct.getWeight() * ratio)));
+                mealProduct.calculateProperties();
+            });
+            meal.calculateProperties();
+        });
+        dayMeals.calculateProperties();
     }
 }

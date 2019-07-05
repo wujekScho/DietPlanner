@@ -4,6 +4,7 @@ import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.apache.commons.math3.util.Precision;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -41,8 +42,8 @@ public class MealProduct implements Serializable {
         if (this.getProduct().getHomeMeasureWeightRatio() == null) {
             this.weight = weight;
         } else {
-            double ratioTimesStep = product.getHomeMeasureStep() * product.getHomeMeasureStep();
-            this.weight = (int) (Math.round(weight / ratioTimesStep) * ratioTimesStep);
+            double ratioTimesStep = (double) product.getHomeMeasureStep() * product.getHomeMeasureStep();
+            this.weight = (int) (Math.round((double) weight / ratioTimesStep) * ratioTimesStep);
             if (this.weight == 0) {
                 this.weight = (int) (Math.round(ratioTimesStep));
             }
@@ -63,5 +64,8 @@ public class MealProduct implements Serializable {
             this.fat = ratio * this.product.getFat();
             this.carbohydrates = ratio * this.product.getCarbohydrates();
         }
+        this.protein = Precision.round(this.protein, 1);
+        this.fat = Precision.round(this.fat, 1);
+        this.carbohydrates = Precision.round(this.carbohydrates, 1);
     }
 }

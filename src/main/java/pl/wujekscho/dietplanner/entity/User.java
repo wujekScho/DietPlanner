@@ -26,6 +26,8 @@ public class User {
     @JsonIgnore
     @OneToMany(mappedBy = "user")
     List<PlannedDay> plannedDays = new ArrayList<>();
+    @Column(nullable = false)
+    Integer caloriesNeeded;
     @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     private Set<UserRole> roles = new HashSet<>();
     @ElementCollection(targetClass = Double.class)

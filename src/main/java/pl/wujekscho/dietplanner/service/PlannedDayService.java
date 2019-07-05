@@ -23,19 +23,28 @@ public class PlannedDayService {
     private PlannedDayRepository plannedDayRepository;
     private DayMealsRepository dayMealsRepository;
     private UserRepository userRepository;
+    private DayMealsService dayMealsService;
 
-    public PlannedDayService(PlannedDayRepository plannedDayRepository, DayMealsRepository dayMealsRepository, UserRepository userRepository) {
+    public PlannedDayService(PlannedDayRepository plannedDayRepository, DayMealsRepository dayMealsRepository, UserRepository userRepository, DayMealsService dayMealsService) {
         this.plannedDayRepository = plannedDayRepository;
         this.dayMealsRepository = dayMealsRepository;
         this.userRepository = userRepository;
+        this.dayMealsService = dayMealsService;
     }
 
     public List<PlannedDay> findAllByUserId(Long userId) {
-        return plannedDayRepository.findAllByUserIdOrderByMealsDate(userId);
+        List<PlannedDay> usersPlannedDays = plannedDayRepository.findAllByUserIdOrderByMealsDate(userId);
+        usersPlannedDays.forEach(plannedDay -> {
+            dayMealsService.calibrateToNeeds(plannedDay.getDayMeals(), userId);
+        });
+        return usersPlannedDays;
     }
 
     public PlannedDay findById(Long id) {
-        return plannedDayRepository.getOne(id);
+        PlannedDay plannedDay = plannedDayRepository.getOne(id);
+        Long userId = plannedDay.getUser().getId();
+        dayMealsService.calibrateToNeeds(plannedDay.getDayMeals(), userId);
+        return plannedDay;
     }
 
     public PlannedDay save(PlannedDayId plannedDayId) {
@@ -56,6 +65,7 @@ public class PlannedDayService {
         List<ShoppingListProduct> shoppingList = new ArrayList<>();
         plannedDaysIds.forEach(id -> {
             PlannedDay plannedDay = plannedDayRepository.getOne(id);
+            dayMealsService.calibrateToNeeds(plannedDay.getDayMeals(), plannedDay.getUser().getId());
             plannedDay.getDayMeals().getDayMeals().forEach(meal -> {
                 meal.getMealProducts().forEach(mealProduct -> {
                     Product product = mealProduct.getProduct();

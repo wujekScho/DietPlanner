@@ -34,6 +34,7 @@ public class UserService {
         user.getRoles().add(defaultRole);
         String passwordHash = passwordEncoder.encode(user.getPassword());
         user.setPassword(passwordHash);
+        user.setCaloriesNeeded(user.getCaloriesNeeded());
         userRepository.save(user);
     }
 

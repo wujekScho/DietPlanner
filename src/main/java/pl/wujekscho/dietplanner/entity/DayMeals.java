@@ -5,9 +5,11 @@ import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.apache.commons.math3.util.Precision;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.List;
 
@@ -91,5 +93,9 @@ public class DayMeals implements Serializable {
                 this.carbohydrates += meal.getCarbohydrates();
             }
         }
+        DecimalFormat df = new DecimalFormat("#.#");
+        this.protein = Precision.round(this.protein, 1);
+        this.fat = Precision.round(this.fat, 1);
+        this.carbohydrates = Precision.round(this.carbohydrates, 1);
     }
 }
