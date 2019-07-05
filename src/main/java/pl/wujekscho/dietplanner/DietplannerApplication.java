@@ -11,7 +11,7 @@ import pl.wujekscho.dietplanner.repository.ProductRepository;
 public class DietplannerApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext ctx = SpringApplication.run(DietplannerApplication.class, args);
-        importData(ctx);
+//        importData(ctx);
     }
 
     public static void importData(ConfigurableApplicationContext ctx) {
