@@ -1,5 +1,5 @@
-﻿Awokado;Owoc;160,00;2,00;15,30;7,40;sztuka;141,00;0,50
-Banan;Owoc;95,00;1,00;0,30;23,50;sztuka;115,00;0,50
+﻿Awokado;Owoc;160,00;2,00;15,30;7,40;sztuka;140,00;0,50
+Banan;Owoc;95,00;1,00;0,30;23,50;sztuka;120,00;0,50
 Bataty;Warzywo ;86,00;1,90;0,10;21,00;;;
 Bazylia;Przyprawa;22,00;3,20;0,60;2,70;garść;10,00;1,00
 Brokuły;Warzywo ;27,00;3,00;0,40;5,20;;;
@@ -9,11 +9,11 @@ Cebula;Warzywo ;30,00;1,30;0,30;7,00;;;
 Chia nasiona;Pestki/Nasiona/Sypkie;490,00;16,00;31,00;44,00;łyżka;10,00;1,00
 Chleb żytni razowy;Pieczywo;214,70;5,90;1,70;58,80;kromka;31,00;1,00
 Cieciorka gotowana na parze Bonduelle;Pestki/Nasiona/Sypkie;127,00;6,40;3,20;18,40;łyżka;14,00;1,00
-Cukinia;Warzywo ;15,00;1,20;0,10;3,20;sztuka;225,00;0,50
+Cukinia;Warzywo ;15,00;1,20;0,10;3,20;sztuka;220,00;0,25
 Curry;Przyprawa;0,00;0,00;0,00;0,00;;;
 Cynamon;Przyprawa;0,00;0,00;0,00;0,00;;;
 Czerwone owoce (dowolne);Owoc;28,00;0,70;0,40;7,20;;;
-Czosnek;Warzywo ;146,70;6,70;0,00;33,30;ząbek;6,70;1,00
+Czosnek;Warzywo ;146,70;6,70;0,00;33,30;ząbek;8;0,25
 Dorsz, świeży, filety bez skóry;Ryba/Mięso;69,60;16,50;0,30;0,00;;;
 Dowolna słodkość do 200 kcal.;Inne;340,00;12,70;18,20;32,20;;;
 Dynia, pestki;Pestki/Nasiona/Sypkie;556,00;25,00;46,00;18,00;łyżka;10,00;1,00
@@ -21,26 +21,26 @@ Dżem jagodowy, niskosłodzony;Inne;153,30;0,00;0,00;38,00;;;
 Fasola szparagowa;Warzywo ;27,00;2,40;0,20;7,60;porcja;50,00;1,00
 Granola;Produkty śniadaniowe;412,00;9,20;6,60;69,00;łyżka;10,00;1,00
 Grejpfrut;Owoc;36,00;0,60;0,20;9,80;sztuka;300,00;0,5
-Groszek zielony;Warzywo ;75,00;6,70;0,40;17,00;porcja;100,00;1,00
+Groszek zielony;Warzywo ;75,00;6,70;0,40;17,00;;;
 Gruszka;Owoc;54,00;0,60;0,20;14,40;sztuka;156,00;0,50
 Hummus;Inne;346,00;8,50;29,00;15,50;łyżeczka;10,00;1,00
 Imbir;Przyprawa;80,00;3,30;0,00;16,70;;;
 Jabłko;Owoc;46,00;0,40;0,40;12,10;sztuka;188,00;0,50
-Jaja kurze całe;Nabiał;139,00;19,20;9,70;0,60;sztuka;150,00;1,00
-Jogurt naturalny, 2% tłuszczu;Nabiał;60,00;4,30;2,00;6,20;kubek;250,00;1,00
+Jaja kurze całe;Nabiał;139,00;19,20;9,70;0,60;sztuka;60,00;1,00
+Jogurt naturalny, 2% tłuszczu;Nabiał;60,00;4,30;2,00;6,20;kubek;200,00;0,25
 Kasza gryczana;Pestki/Nasiona/Sypkie;336,00;12,60;3,10;69,30;;;
 Kasza jęczmienna, perłowa;Pestki/Nasiona/Sypkie;327,00;6,80;2,20;75,00;;;
 Kiełki;Zielenina;119,00;9,00;1,00;22,00;porcja;10,00;1,00
-Kiwi;Owoc;56,00;0,90;0,50;14,00;sztuka;81,00;0,50
+Kiwi;Owoc;56,00;0,90;0,50;14,00;sztuka;80,00;0,50
 Kolendra;Przyprawa;0,00;0,00;0,00;0,00;;;
-Koper ogrodowy;Zielenina;26,30;2,50;0,60;6,30;łyżka;16,00;1,00
+Koper ogrodowy;Zielenina;26,30;2,50;0,60;6,30;łyżka;16,00;0,25
 Koperek;Zielenina;0,00;0,00;0,00;0,00;;;
 Ksylitol;Przyprawa;240,00;0,00;0,00;0,00;;;
 Liść laurowy;Przyprawa;0,00;0,00;0,00;0,00;;;
 Łosoś, świeży;Ryba/Mięso;201,00;19,90;13,60;0,00;;;
 Łosoś, wędzony;Ryba/Mięso;162,00;21,60;8,40;0,00;;;
 Makaron penne pełnoziarnisty;Ryż/Makaron/Kasza;100,00;4,40;0,40;19,70;;;
-Marchew;Warzywo ;27,00;1,00;0,20;8,70;sztuka;105,00;0,50
+Marchew;Warzywo ;27,00;1,00;0,20;8,70;sztuka;100,00;0,25
 Masło klarowane;Inne;735,30;0,70;82,70;0,70;;;
 Mąka kukurydziana;Do pieczenia;337,00;6,00;3,00;78,00;łyżka;6,00;0,50
 Mąka owsiana;Do pieczenia;366,70;11,70;6,70;70,00;łyżka;6,00;0,50
@@ -57,12 +57,12 @@ Naleśniki suchy;Inne;100,00;5,90;3,60;21,10;sztuka;80,00;1,00
 Ogórek;Warzywo ;13,00;0,70;0,10;2,90;sztuka;111,00;1,00
 Ogórek kiszony;Warzywo ;11,00;1,00;0,20;1,80;sztuka;60,00;1,00
 Olej rzepakowy uniwersalny;Inne;883,80;0,00;100,00;0,00;łyżka;6,00;1,00
-Oliwa z oliwek;Inne;881,70;0,00;100,00;0,00;łyżka;6,00;1,00
+Oliwa z oliwek;Inne;881,70;0,00;100,00;0,00;łyżeczka;4,00;0,50
 Oliwki marynowane, konserwowe;Warzywo ;125,00;1,50;12,50;4,00;sztuka;2,00;1,00
 Orzechy dowolne;Pestki/Nasiona/Sypkie;640,00;14,50;63,00;15,00;łyżka;20,00;1,00
 Orzechy włoskie;Pestki/Nasiona/Sypkie;645,00;16,00;60,30;18,00;;;
-Otręby - dowolne;Pestki/Nasiona/Sypkie;185,00;16,70;5,00;61,70;łyżka;6,00;1,00
-Papryka czerwona;Warzywo ;28,00;1,30;0,50;6,60;sztuka;150,00;1,00
+Otręby - dowolne;Pestki/Nasiona/Sypkie;185,00;16,70;5,00;61,70;łyżka;4,00;0,25
+Papryka czerwona;Warzywo ;28,00;1,30;0,50;6,60;sztuka;160,00;0,25
 Papryka żółta;Warzywo ;28,00;1,30;0,50;6,60;sztuka;150,00;1,00
 Pergamin do smażenia;Inne;0,00;0,00;0,00;0,00;;;
 Pesto;Inne;340,00;3,50;34,50;6,50;łyżeczka;10,00;1,00
@@ -76,7 +76,7 @@ Pomarańcza;Owoc;44,00;0,90;0,20;11,30;sztuka;250,00;1,00
 Pomelo;Owoc;38,00;0,80;0,00;9,60;sztuka;300,00;1,00
 Pomidor;Warzywo ;15,00;0,90;0,20;3,60;sztuka;192,00;1,00
 Pomidorki koktajlowe;Warzywo ;15,00;0,90;0,10;3,60;;;
-Pomidory w puszce krojone;Inne;25,00;1,20;0,10;4,50;puszka;1,00;1,00
+Pomidory w puszce krojone;Inne;25,00;1,20;0,10;4,50;puszka;400,00;0,25
 Por;Warzywo ;24,00;2,30;0,30;5,70;;;
 Rękaw do pieczenia;Inne;0,00;0,00;0,00;0,00;;;
 Ryż basmati;Ryż/Makaron/Kasza;344,00;6,70;0,70;78,80;;;

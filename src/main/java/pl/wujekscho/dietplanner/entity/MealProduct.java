@@ -13,7 +13,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Table(name = "meal_products")
-public class MealProduct implements Serializable{
+public class MealProduct implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
@@ -33,8 +33,20 @@ public class MealProduct implements Serializable{
 
 
     public MealProduct(Integer weight, Product product) {
-        this.weight = weight;
+        setWeight(weight);
         this.product = product;
+    }
+
+    public void setWeight(Integer weight) {
+        if (this.getProduct().getHomeMeasureWeightRatio() == null) {
+            this.weight = weight;
+        } else {
+            double ratioTimesStep = product.getHomeMeasureStep() * product.getHomeMeasureStep();
+            this.weight = (int) (Math.round(weight / ratioTimesStep) * ratioTimesStep);
+            if (this.weight == 0) {
+                this.weight = (int) (Math.round(ratioTimesStep));
+            }
+        }
     }
 
     @PrePersist
