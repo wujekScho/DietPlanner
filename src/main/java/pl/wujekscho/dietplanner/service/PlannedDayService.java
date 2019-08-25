@@ -1,12 +1,12 @@
 package pl.wujekscho.dietplanner.service;
 
 import org.springframework.stereotype.Service;
+import pl.wujekscho.dietplanner.dto.PlannedDayDto;
+import pl.wujekscho.dietplanner.dto.ShoppingListProductDto;
 import pl.wujekscho.dietplanner.entity.DayMeals;
 import pl.wujekscho.dietplanner.entity.PlannedDay;
 import pl.wujekscho.dietplanner.entity.Product;
 import pl.wujekscho.dietplanner.entity.User;
-import pl.wujekscho.dietplanner.model.PlannedDayId;
-import pl.wujekscho.dietplanner.model.ShoppingListProduct;
 import pl.wujekscho.dietplanner.repository.DayMealsRepository;
 import pl.wujekscho.dietplanner.repository.PlannedDayRepository;
 import pl.wujekscho.dietplanner.repository.UserRepository;
@@ -47,10 +47,10 @@ public class PlannedDayService {
         return plannedDay;
     }
 
-    public PlannedDay save(PlannedDayId plannedDayId) {
-        DayMeals dayMeals = dayMealsRepository.getOne(plannedDayId.getDayMealsId());
-        User user = userRepository.getOne(plannedDayId.getUserId());
-        LocalDate mealsDate = plannedDayId.getMealsDate();
+    public PlannedDay save(PlannedDayDto plannedDayDto) {
+        DayMeals dayMeals = dayMealsRepository.getOne(plannedDayDto.getDayMealsId());
+        User user = userRepository.getOne(plannedDayDto.getUserId());
+        LocalDate mealsDate = plannedDayDto.getMealsDate();
         PlannedDay plannedDay = new PlannedDay(mealsDate, dayMeals, user);
         System.out.println(plannedDay.getMealsDate());
         return plannedDayRepository.save(plannedDay);
@@ -61,8 +61,8 @@ public class PlannedDayService {
 
     }
 
-    public List<ShoppingListProduct> getShoppingList(List<Long> plannedDaysIds) {
-        List<ShoppingListProduct> shoppingList = new ArrayList<>();
+    public List<ShoppingListProductDto> getShoppingList(List<Long> plannedDaysIds) {
+        List<ShoppingListProductDto> shoppingList = new ArrayList<>();
         plannedDaysIds.forEach(id -> {
             PlannedDay plannedDay = plannedDayRepository.getOne(id);
             dayMealsService.calibrateToNeeds(plannedDay.getDayMeals(), plannedDay.getUser().getId());
@@ -70,37 +70,37 @@ public class PlannedDayService {
                 meal.getMealProducts().forEach(mealProduct -> {
                     Product product = mealProduct.getProduct();
                     Integer weight = mealProduct.getWeight();
-                    ShoppingListProduct shoppingListProduct = new ShoppingListProduct();
-                    shoppingListProduct.setWeight(weight);
-                    shoppingListProduct.setName(product.getName());
-                    shoppingListProduct.setType(product.getProductType().getType());
+                    ShoppingListProductDto shoppingListProductDto = new ShoppingListProductDto();
+                    shoppingListProductDto.setWeight(weight);
+                    shoppingListProductDto.setName(product.getName());
+                    shoppingListProductDto.setType(product.getProductType().getType());
                     if (product.getHomeMeasureType() != null) {
                         String homeMeasure = String.format("%d x %s", Math.round(weight / product.getHomeMeasureWeightRatio()), product.getHomeMeasureType());
-                        shoppingListProduct.setHomeMeasure(homeMeasure);
+                        shoppingListProductDto.setHomeMeasure(homeMeasure);
                     }
-                    shoppingList.add(shoppingListProduct);
+                    shoppingList.add(shoppingListProductDto);
                 });
             });
         });
-        List<ShoppingListProduct> groupedShoppingList = shoppingList.stream()
+        List<ShoppingListProductDto> groupedShoppingList = shoppingList.stream()
                 .collect(Collectors.collectingAndThen(
-                        Collectors.groupingBy(ShoppingListProduct::getName, Collectors.collectingAndThen(
+                        Collectors.groupingBy(ShoppingListProductDto::getName, Collectors.collectingAndThen(
                                 Collectors.reducing((a, b) -> {
-                                    ShoppingListProduct shoppingListProduct = new ShoppingListProduct();
-                                    shoppingListProduct.setName(a.getName());
-                                    shoppingListProduct.setType(a.getType());
-                                    shoppingListProduct.setWeight(a.getWeight() + b.getWeight());
+                                    ShoppingListProductDto shoppingListProductDto = new ShoppingListProductDto();
+                                    shoppingListProductDto.setName(a.getName());
+                                    shoppingListProductDto.setType(a.getType());
+                                    shoppingListProductDto.setWeight(a.getWeight() + b.getWeight());
                                     if (a.getHomeMeasure() != null) {
                                         int aHomeMeasureValue = Integer.valueOf(a.getHomeMeasure().replaceAll("[^\\d]+", ""));
                                         int bHomeMeasureValue = Integer.valueOf(b.getHomeMeasure().replaceAll("[^\\d]+", ""));
                                         String newHomeMeasureValue = String.valueOf(aHomeMeasureValue + bHomeMeasureValue);
-                                        shoppingListProduct.setHomeMeasure(a.getHomeMeasure().replaceAll("\\d+", newHomeMeasureValue));
+                                        shoppingListProductDto.setHomeMeasure(a.getHomeMeasure().replaceAll("\\d+", newHomeMeasureValue));
                                     }
-                                    return shoppingListProduct;
+                                    return shoppingListProductDto;
                                 }), Optional::get)),
                         m -> new ArrayList<>(m.values())));
-        List<ShoppingListProduct> sortedShoppingList = groupedShoppingList.stream()
-                .sorted(Comparator.comparing(ShoppingListProduct::getType).thenComparing(ShoppingListProduct::getName))
+        List<ShoppingListProductDto> sortedShoppingList = groupedShoppingList.stream()
+                .sorted(Comparator.comparing(ShoppingListProductDto::getType).thenComparing(ShoppingListProductDto::getName))
                 .collect(Collectors.toList());
         return sortedShoppingList;
     }

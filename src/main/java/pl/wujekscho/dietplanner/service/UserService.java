@@ -4,9 +4,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
+import pl.wujekscho.dietplanner.dto.WeightMeasurementDto;
 import pl.wujekscho.dietplanner.entity.User;
 import pl.wujekscho.dietplanner.entity.UserRole;
-import pl.wujekscho.dietplanner.model.WeightMeasurement;
 import pl.wujekscho.dietplanner.repository.UserRepository;
 import pl.wujekscho.dietplanner.repository.UserRoleRepository;
 
@@ -56,10 +56,10 @@ public class UserService {
         return user == null;
     }
 
-    public void addWeightMeasurement(WeightMeasurement weightMeasurement) {
-        User user = userRepository.getOne(weightMeasurement.getUserId());
-        LocalDate measurementDate = weightMeasurement.getMeasurementDate();
-        Double weight = weightMeasurement.getWeight();
+    public void addWeightMeasurement(WeightMeasurementDto weightMeasurementDto) {
+        User user = userRepository.getOne(weightMeasurementDto.getUserId());
+        LocalDate measurementDate = weightMeasurementDto.getMeasurementDate();
+        Double weight = weightMeasurementDto.getWeight();
         Map<LocalDate, Double> weightOverTime = user.getWeightOverTime();
         if (weightOverTime.containsKey(measurementDate)) {
             throw new ResponseStatusException(HttpStatus.CONFLICT, "not_unique_date");
@@ -69,18 +69,18 @@ public class UserService {
         userRepository.save(user);
     }
 
-    public void editWeightMeasurement(WeightMeasurement weightMeasurement) {
-        User user = userRepository.getOne(weightMeasurement.getUserId());
+    public void editWeightMeasurement(WeightMeasurementDto weightMeasurementDto) {
+        User user = userRepository.getOne(weightMeasurementDto.getUserId());
         Map<LocalDate, Double> weightOverTime = user.getWeightOverTime();
-        weightOverTime.put(weightMeasurement.getMeasurementDate(), weightMeasurement.getWeight());
+        weightOverTime.put(weightMeasurementDto.getMeasurementDate(), weightMeasurementDto.getWeight());
         user.setWeightOverTime(weightOverTime);
         userRepository.save(user);
     }
 
-    public void deleteWeightMeasurement(WeightMeasurement weightMeasurement) {
-        User user = userRepository.getOne(weightMeasurement.getUserId());
+    public void deleteWeightMeasurement(WeightMeasurementDto weightMeasurementDto) {
+        User user = userRepository.getOne(weightMeasurementDto.getUserId());
         Map<LocalDate, Double> weightOverTime = user.getWeightOverTime();
-        weightOverTime.remove(weightMeasurement.getMeasurementDate());
+        weightOverTime.remove(weightMeasurementDto.getMeasurementDate());
         user.setWeightOverTime(weightOverTime);
         userRepository.save(user);
     }

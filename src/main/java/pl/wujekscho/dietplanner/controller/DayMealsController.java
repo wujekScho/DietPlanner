@@ -2,8 +2,8 @@ package pl.wujekscho.dietplanner.controller;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import pl.wujekscho.dietplanner.dto.DayMealsDto;
 import pl.wujekscho.dietplanner.entity.DayMeals;
-import pl.wujekscho.dietplanner.model.DayMealsId;
 import pl.wujekscho.dietplanner.service.DayMealsService;
 
 import java.util.List;
@@ -33,7 +33,7 @@ public class DayMealsController {
     }
 
     @PostMapping(path = "", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void save(@RequestBody DayMealsId dayMealsId) {
-        dayMealsService.save(dayMealsId);
+    public void save(@RequestBody DayMealsDto dayMealsDto) {
+        dayMealsService.save(dayMealsDto);
     }
 }

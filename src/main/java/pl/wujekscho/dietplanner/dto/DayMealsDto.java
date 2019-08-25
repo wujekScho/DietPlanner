@@ -1,9 +1,9 @@
-package pl.wujekscho.dietplanner.model;
+package pl.wujekscho.dietplanner.dto;
 
 import lombok.Data;
 
 @Data
-public class DayMealsId {
+public class DayMealsDto {
     private Long userId;
     private Long breakfastId;
     private Long brunchId;

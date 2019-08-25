@@ -1,8 +1,8 @@
 package pl.wujekscho.dietplanner.service;
 
 import org.springframework.stereotype.Service;
+import pl.wujekscho.dietplanner.dto.DayMealsDto;
 import pl.wujekscho.dietplanner.entity.DayMeals;
-import pl.wujekscho.dietplanner.model.DayMealsId;
 import pl.wujekscho.dietplanner.repository.DayMealsRepository;
 import pl.wujekscho.dietplanner.repository.MealRepository;
 import pl.wujekscho.dietplanner.repository.UserRepository;
@@ -37,14 +37,14 @@ public class DayMealsService {
         return dayMealsRepository.getOne(id);
     }
 
-    public void save(DayMealsId dayMealsId) {
+    public void save(DayMealsDto dayMealsDto) {
         DayMeals dayMeals = new DayMeals();
-        dayMeals.setUser(userRepository.getOne(dayMealsId.getUserId()));
-        dayMeals.setBreakfast(mealRepository.getOne(dayMealsId.getBreakfastId()));
-        dayMeals.setBrunch(mealRepository.getOne(dayMealsId.getBrunchId()));
-        dayMeals.setDinner(mealRepository.getOne(dayMealsId.getDinnerId()));
-        dayMeals.setTea(mealRepository.getOne(dayMealsId.getTeaId()));
-        dayMeals.setSupper(mealRepository.getOne(dayMealsId.getSupperId()));
+        dayMeals.setUser(userRepository.getOne(dayMealsDto.getUserId()));
+        dayMeals.setBreakfast(mealRepository.getOne(dayMealsDto.getBreakfastId()));
+        dayMeals.setBrunch(mealRepository.getOne(dayMealsDto.getBrunchId()));
+        dayMeals.setDinner(mealRepository.getOne(dayMealsDto.getDinnerId()));
+        dayMeals.setTea(mealRepository.getOne(dayMealsDto.getTeaId()));
+        dayMeals.setSupper(mealRepository.getOne(dayMealsDto.getSupperId()));
         dayMealsRepository.save(dayMeals);
     }
 

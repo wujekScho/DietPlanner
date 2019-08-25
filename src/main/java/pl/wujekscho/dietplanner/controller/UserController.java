@@ -2,8 +2,8 @@ package pl.wujekscho.dietplanner.controller;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import pl.wujekscho.dietplanner.dto.WeightMeasurementDto;
 import pl.wujekscho.dietplanner.entity.User;
-import pl.wujekscho.dietplanner.model.WeightMeasurement;
 import pl.wujekscho.dietplanner.service.UserService;
 
 import java.security.Principal;
@@ -39,18 +39,18 @@ public class UserController {
     }
 
     @PostMapping(path = "/add-weight", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void addWeightMeasurement(@RequestBody WeightMeasurement weightMeasurement) {
-        userService.addWeightMeasurement(weightMeasurement);
+    public void addWeightMeasurement(@RequestBody WeightMeasurementDto weightMeasurementDto) {
+        userService.addWeightMeasurement(weightMeasurementDto);
     }
 
     @PostMapping(path = "/edit-weight", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void editWeightMeasurement(@RequestBody WeightMeasurement weightMeasurement) {
-        userService.editWeightMeasurement(weightMeasurement);
+    public void editWeightMeasurement(@RequestBody WeightMeasurementDto weightMeasurementDto) {
+        userService.editWeightMeasurement(weightMeasurementDto);
     }
 
     @PostMapping(path = "/delete-weight", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void deleteWeightMeasurement(@RequestBody WeightMeasurement weightMeasurement) {
-        userService.deleteWeightMeasurement(weightMeasurement);
+    public void deleteWeightMeasurement(@RequestBody WeightMeasurementDto weightMeasurementDto) {
+        userService.deleteWeightMeasurement(weightMeasurementDto);
     }
 
 

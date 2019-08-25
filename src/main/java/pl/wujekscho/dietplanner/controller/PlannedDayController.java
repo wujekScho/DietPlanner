@@ -2,9 +2,9 @@ package pl.wujekscho.dietplanner.controller;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import pl.wujekscho.dietplanner.dto.PlannedDayDto;
+import pl.wujekscho.dietplanner.dto.ShoppingListProductDto;
 import pl.wujekscho.dietplanner.entity.PlannedDay;
-import pl.wujekscho.dietplanner.model.PlannedDayId;
-import pl.wujekscho.dietplanner.model.ShoppingListProduct;
 import pl.wujekscho.dietplanner.service.PlannedDayService;
 
 import java.util.List;
@@ -29,12 +29,12 @@ public class PlannedDayController {
     }
 
     @PostMapping(path = "/shopping-list", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public List<ShoppingListProduct> getShoppingList(@RequestBody List<Long> plannedDaysIds) {
+    public List<ShoppingListProductDto> getShoppingList(@RequestBody List<Long> plannedDaysIds) {
         return plannedDayService.getShoppingList(plannedDaysIds);
     }
 
     @PostMapping(path = "", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void save(@RequestBody PlannedDayId plannedDay) {
+    public void save(@RequestBody PlannedDayDto plannedDay) {
         plannedDayService.save(plannedDay);
     }
 

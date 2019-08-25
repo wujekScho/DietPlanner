@@ -1,9 +1,9 @@
-package pl.wujekscho.dietplanner.model;
+package pl.wujekscho.dietplanner.dto;
 
 import lombok.Data;
 
 @Data
-public class ShoppingListProduct {
+public class ShoppingListProductDto {
     private String name;
     private Integer weight;
     private String homeMeasure;

@@ -1,11 +1,12 @@
-package pl.wujekscho.dietplanner.model;
+package pl.wujekscho.dietplanner.dto;
+
 
 import lombok.Data;
 
 import java.time.LocalDate;
 
 @Data
-public class WeightMeasurement {
+public class WeightMeasurementDto {
     private Long userId;
     private LocalDate measurementDate;
     private Double weight;
